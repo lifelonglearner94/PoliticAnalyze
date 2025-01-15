@@ -5,3 +5,5 @@ claim_classifier
 results
 saved_on_hardrive
 *.ipynb
+__pycache__/
+*.pyc
