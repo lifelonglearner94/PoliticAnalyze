@@ -1,0 +1,621 @@
+sentence,label_string,label_numeric
+Wahlprogramm von CDU und CSU Inhal,Keine Behauptung,0
+"I. Für ein Deutschland, auf das wir wieder stolz sein können .",Keine Behauptung,0
+"Unser Plan für ein Land, das wieder Wohlstand für alle schafft .",Keine Behauptung,0
+"Ja zu bezahlbarer, sicherer und sauberer Energie .",Keine Behauptung,0
+Ja zu marktwirtschaftlichem Klima und Umweltschutz .,Keine Behauptung,0
+"Ja zu Forschung, Innovationen und neuen Technologien .",Keine Behauptung,0
+Ja zu einem starken und gerechten Sozialstaat .,Keine Behauptung,0
+"Ja zu mehr Eigentum, Vermögensbildung und sicherer Altersvorsorge . .",Keine Behauptung,0
+"Unser Plan für ein Land, das frei und wieder sicher ist .",Keine Behauptung,0
+Ja zum Stopp der illegalen Migration . .,Keine Behauptung,0
+Ja zu einer voll verteidigungsfähigen Bundeswehr .,Keine Behauptung,0
+"Unser Plan für ein Land, das wieder zusammenhält .",Keine Behauptung,0
+Ja zu leistungsstarker beruflicher und akademischer Bildung .,Keine Behauptung,0
+"Ja zu bezahlbarem Bauen, Wohnen und zukunftsfähiger Mobilität . .",Keine Behauptung,0
+Ja zu einem funktionierenden Staat – das ist unser Zukunftsversprechen . .,Keine Behauptung,0
+"Wir alle wissen, wie es um unser Land steht – und dass es so nicht weitergehen kann.",Behauptung,1
+"Zu Recht wird von jeder Bundesregierung erwartet, dass es am Ende ihrer Amtszeit Land und Leuten besser geht.",Keine Behauptung,0
+Die Ampel hat diese Erwartungen enttäuscht.,Behauptung,1
+Hinter Deutschland liegen drei verlorene Jahre – und vor uns historisch große Herausforderungen .,Behauptung,1
+"Es geht um unsere Freiheit, es geht um Frieden, Wohlstand, Sicherheit und den Zusammenhalt unserer Gesellschaft .",Keine Behauptung,0
+"Wir wissen zugleich um die Kraft, die in unserem Land und in jedem Einzelnen von uns steckt.",Behauptung,1
+"Wir haben alles, um Deutschland wieder nach vorne zu bringen.",Behauptung,1
+"Dafür braucht unser Land eine Bundesregierung, die wieder die wirklich wichtigen Dinge anpackt: die Sicherung des Friedens in Freiheit, Wohlstand für alle , Sicherheit und Zusammenhalt.",Keine Behauptung,0
+Unser Land braucht Stabilität und Aufbruch .,Behauptung,1
+Unser Land braucht einen Politikwechsel!,Behauptung,1
+"Mit einer neuen Politik können wir dafür sorgen, dass Deutsch land wieder nach vorne kommt.",Behauptung,1
+Für ein neues Wohlstandsversprechen Deutschland brauch t wieder eine Politik für die hart arbeitende Bevölkerung – eine Agenda für die Fleißigen.,Behauptung,1
+• Wir entlasten vor allem Menschen mit niedrigen und mittleren Einkommen.,Keine Behauptung,0
+Unser Ziel für die Sozialversicherungsbeiträge: Wir wollen uns wieder auf die  Prozent hinbewegen .,Keine Behauptung,0
+Wir stellen Überstunden zuschläge bei Vollzeitarbeit steuerfrei.,Keine Behauptung,0
+"Wer freiwillig mehr arbeiten will, soll mehr Netto vom Brutto haben.",Keine Behauptung,0
+So stärken wir unsere Leistungsträger im ländlichen Raum.,Behauptung,1
+Künftig soll für alle Unternehmen anstelle der täglichen eine wöchentliche Höchstarbeitszeit gelten.,Keine Behauptung,0
+Für ausländische Fachkräfte richten wir eine digitale „Work -and -Stay -Agentur“ ein.,Keine Behauptung,0
+"Sie bietet Service aus einer Hand: Anwerbung, Arbeitsplatzvermittlung, Prüfung der Einreisevoraussetzungen , Visavergabe , Aufenthaltstitel .",Keine Behauptung,0
+Aufbruch für die Wirtschaft – mit neuer Freiheit,Keine Behauptung,0
+"Deshalb setzen wir auf Wachstum, Investitionen, Freiräume für unsere Unternehmen und gute Arbeitsplätze.",Keine Behauptung,0
+"Worauf es jetzt vor allem ankommt: • Wir senken die Unternehmenssteuerbelastung auf maximal  Prozent, schaffen den Rest -Soli ab und verbessern Abschreibungen und Verlustverrechnung.",Keine Behauptung,0
+Wir beseitigen mit Entrümpelungsgesetzen und Bürokratie -Checks überflüssigen Papierkram.,Keine Behauptung,0
+Statistikpflichten und Doppelstrukturen bauen wir ab.,Keine Behauptung,0
+Das nationale Lieferkettengesetz schaffen wir ab.,Keine Behauptung,0
+Dazu nehmen wir die deutsche Übererfüllung von europäischem Recht zurück und unterbinden sie künftig.,Behauptung,1
+"Energie bezahlbar machen, Klima marktwirtschaftlich schützen",Keine Behauptung,0
+Wir beenden die ideologiegetriebene Politik der Ampel.,Behauptung,1
+Mit den Menschen und nicht gegen sie – so funktioniert Energie und Klimapolitik.,Keine Behauptung,0
+• Wir senken die Stromsteuer und die Netzentgelte.,Keine Behauptung,0
+Der Strom muss für alle schnell und spürbar günstiger werden.,Keine Behauptung,0
+"Wir bauen Netze , Speicher und alle Erneuerbaren aus und setzen auf Bezahlbarkeit und Versorgungssicherheit .",Keine Behauptung,0
+Nur mehr Angebot senkt die Preise .,Behauptung,1
+Wir halten an der Option Kern energie fest.,Keine Behauptung,0
+"Dabei setzen wir auf die Forschung zu Kernenergie der vierten und fünften Generation, Small Modular Reactors und Fusionskraftwerke n.",Keine Behauptung,0
+Die Wiederaufnahme des Betriebs der zuletzt abgeschalteten Kernkraftwerke prüfen wir.,Keine Behauptung,0
+Wir schaffen das Heizungsgesetz der Ampel ab.,Keine Behauptung,0
+Mit dem bürokratischen Reinregieren in den Heizungskeller muss Schluss sein.,Keine Behauptung,0
+Wir fördern technologieoffen emissionsarme Wärmelösungen.,Keine Behauptung,0
+"Er ist das richtige Instrument, um die Emissionsmenge effizient zu begrenzen und damit das Klima bestmöglich zu schützen.",Keine Behauptung,0
+"Deutschland fit machen für Innovationen , Digitalisierung und Startups Forschung, Innovationen , Technologie n und Transfer (FIT T) sind die Grundlage für eine wettbewerbsfähige Wirtschaft mit gut bezahlten Arbeitsplätzen.",Keine Behauptung,0
+Ausgründungen und der Transfer hin zu marktfähigen Lösungen müssen besser gelingen .,Keine Behauptung,0
+Mit „Made in Germany“ wieder an die Spitze!,Keine Behauptung,0
+Wir treiben mit Digitalisierung sowie souveränen KI und Cloudanwendungen die Re-Industrialisierung unseres Landes voran.,Keine Behauptung,0
+"Zukunftstechnologien brauchen Freiräume , der Staat braucht klare Zuständigkeiten.",Behauptung,1
+"Wir sorgen dafür , dass Wirtschaft und Staat bis  , Prozent des Bruttoinlandsprodukts für Forschung und Entwicklung aufwenden.",Keine Behauptung,0
+Wir legen eine Hightech -Agenda vor.,Keine Behauptung,0
+Kompetenzzentrum und Innovationsstandort für Zukunftstechnologien werden – von der Luft und Raumfahrt bis zum Quantencomputing.,Keine Behauptung,0
+"Wir werden eine neue , ambitionierte Raumfahrtstrategie verfolgen.",Keine Behauptung,0
+Mit einer „Gründerschutzzone“ befreien wir in der Startphase weitgehend von bürokratischen Vorschriften.,Keine Behauptung,0
+Die Datenschutzpolitik muss eine echte Datenchancenpolitik werden.,Keine Behauptung,0
+Die Chancen von Open Data für Innovationen und Wachstum müssen wir nutzen.,Behauptung,1
+Für einen starken und gerechten Sozialstaat,Keine Behauptung,0
+Das erwarten die Arbeitnehmerinnen und Arbeitnehmer von der Politik.,Keine Behauptung,0
+"Und zwar zu Recht, denn sie schaffen mit ihrem Leistungswillen unseren Wohlstand.",Keine Behauptung,0
+• Wir schaffen das sogenannte „Bürgergeld“ ab und ersetzen es durch eine Neue Grundsicherung.,Keine Behauptung,0
+Fördern und Fordern muss immer gelten.,Keine Behauptung,0
+"Wir stehen zum gesetzlichen Mindestlohn und einer starken , unabhängigen Mindestlohnkommission.",Keine Behauptung,0
+Sache der Sozialpartner sein – im Sinne von Fairness und wirtschaftlicher Vernunft .,Keine Behauptung,0
+Wir fördern die Vorsorge mit Eigentum und Vermögen durch höhere Freibeträge bei Grunderwerb und Erbschaftsteuer sowie beim S paren.,Keine Behauptung,0
+Wir halten an der bestehenden gesetzlichen Regelung zum Renteneintrittsalter fest .,Keine Behauptung,0
+Rentenkürzungen wir d es mit uns nicht geben .,Keine Behauptung,0
+"Wer über das gesetzliche Rentenalter hinaus freiwillig weiterarbeitet, bekommt sein Gehalt bis zu .",Keine Behauptung,0
+Euro im Monat steuerfrei.,Keine Behauptung,0
+Wir führen eine Frühstart -Rente ein.,Keine Behauptung,0
+Dafür fördert der Staat für alle  bis  -Jährigen mit  Euro pro Monat die individuelle und kapitalgedeckte private Altersvorsorge.,Keine Behauptung,0
+So bilden wir für die frühe private Altersv orsorge ein Startvermögen .,Keine Behauptung,0
+Wir entlasten die Rentnerinnen und Rentner auch ganz praktisc h und wollen für den Regelfall deren Steuererklärung entbehrlich machen.,Keine Behauptung,0
+Unserer Landwirtschaft den Rücken stärken,Keine Behauptung,0
+"Landwirte verdienen Anerkennung, Respekt und Vertrauen.",Behauptung,1
+Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit.,Keine Behauptung,0
+Worauf es jetzt vor allem ankommt: • Wir führen die Agrardiesel rück vergütung wieder vollständig ein.,Keine Behauptung,0
+So entlasten wir landwirtschaftliche Betriebe.,Keine Behauptung,0
+"Wir machen uns in Brüssel dafür stark, dass das Agrarbudget gut ausgestattet bleibt.",Keine Behauptung,0
+Gleichzeitig muss die Gemeinsame Agrarpolitik drastisch vereinfacht werden.,Behauptung,1
+Wir sagen Bürokratie den Kampf an:,Keine Behauptung,0
+"Stoffstrom bilanz im Düngerecht, Bodengesetz, Taxonomie.",Keine Behauptung,0
+Die Land und Forstwirte können sich auf uns verlassen:,Keine Behauptung,0
+Wir unterstützen innovative Technologien und nachhaltige Bewirtschaftung.,Keine Behauptung,0
+Die zwangsweise Stilllegung von Flächen wird es mit uns nicht geben .,Keine Behauptung,0
+"Wölfe müssen – regional unterschiedlich – bejagt werden können, damit weniger Weidetiere gerissen werden.",Keine Behauptung,0
+"Recht und Ordnung durchsetzen Wir setzen auf eine Null -Toleranz -Strategie , stärken Polizei und Strafverfolgungsbehörden den Rücken und geben ihnen die notwendigen Befugnisse an die Hand , die es braucht .",Keine Behauptung,0
+• Wir verschärfen das Strafrecht und beschleunigen Verfahren.,Keine Behauptung,0
+Die Strafe muss der Tat auf dem Fuße folgen.,Behauptung,1
+Wir setzen verstärkt auf die elektronische Fußfessel.,Keine Behauptung,0
+Gewalttäter gegen Frauen müssen gestoppt werden.,Behauptung,1
+Wir setzen mehr Video kameras sowie Systeme zur automatisierten Gesichtserkennung an Brennpunkten und Gefahrenorten ein.,Keine Behauptung,0
+Straftäter dürfen nicht einfach so davonkommen .,Keine Behauptung,0
+Wir verpflichten die Internetanbieter zur Speicherung der IP-Adressen .,Keine Behauptung,0
+Gegen jede Form der Gewalt gegen Kinder gehen wir konsequent vor – auch im Netz.,Keine Behauptung,0
+Wir schaffen d as Cannabis -Gesetz der Ampel ab.,Keine Behauptung,0
+Dieses Gesetz schützt Dealer und setzt unsere Kinder und Jugendlichen dem Drogenkonsum und der Sucht aus.,Behauptung,1
+Illegale Migration stoppen,Keine Behauptung,0
+Unser Land braucht eine grundsätzliche Wende in der Migrationspolitik.,Behauptung,1
+Eine strikte Begrenzung der Migration ist dringend nötig.,Behauptung,1
+• Wir kontrollieren die deutschen Staatsg renzen und setzen konsequente Zurückweisungen an der Grenze durch.,Keine Behauptung,0
+Wir beschleunigen Asylverfahren und Rückführungen.,Keine Behauptung,0
+Dazu erklären wir weitere Länder zu sicheren Herkunftsländern und schieben auch wieder nach Syrien und Afghanistan ab.,Behauptung,1
+Wir setzen den Familiennachzug zu subsidiär Schutzberechtigten aus und beenden alle freiwilligen Aufnahmeprogramme.,Keine Behauptung,0
+"Wir richten Sozialleistungen für Ausreisepflichtige an de m von Gerichten aufgestellten Grundsatz „Bett, Brot und Seife“ aus.",Keine Behauptung,0
+Wir wollen das europäische Asylrecht ändern und kennen unsere humanitäre Verantwortung .,Keine Behauptung,0
+"Jeder, der in Europa Asyl beantragt , soll in einen sichere n Dritt staat überführt werden , dort sein Verfahren durchlaufen und dort bei Bedarf Schutz finden .",Keine Behauptung,0
+Schutz und Sicherheit – die Feinde unseres Staates bekämpfen Den zunehmenden extremistischen Gefährdungen treten wir mit einem  -Grad -Blick entgegen.,Keine Behauptung,0
+"Wir bekämpfen jede Form von Extremismus, Gewalt und Terror mit voller Härte.",Keine Behauptung,0
+"Worauf es jetzt vor allem ankommt: • Wir stellen das Unterstützen von Terror -Organisationen konsequenter unter Strafe und greifen durch : Ausweisung, Entzug des Aufenthaltstitel s, Verlust der deutschen Staatsbürgerschaft.",Keine Behauptung,0
+"Wir schließen Moscheen, in denen Hass und Antisemitismus gepredigt wird.",Keine Behauptung,0
+Für Islamismus gibt es keinen rechtsfreien Raum.,Behauptung,1
+Wir zeigen Rechtsextremisten die Rote Karte und bekämpfen sie mit voller Härte auf der Basis unseres  gestarteten Maßnahmenpakets .,Keine Behauptung,0
+Wir begegnen Linksextremismus genauso konsequent.,Keine Behauptung,0
+"Wir lassen nicht zu, dass offen zur Gewalt gegen unseren Staa t aufgerufen wir d und das Eigentum Dritter oder kritische Infrastrukturen ang egriffen werden .",Keine Behauptung,0
+Wir bestrafen konsequent das Zeigen verfassungsfeindlicher Symbole sowie verfassungsfeindliche und antisemitische Äußerungen .,Keine Behauptung,0
+Wir rüsten mit einer echten Zollpolizei auf und schöpfen Verbrechensgewinne ab.,Keine Behauptung,0
+"Künftig müssen Kriminelle nachweisen, w oher ihr Vermögen kommt – von der Villa bis zur Yacht .",Keine Behauptung,0
+"Verantwortung in Europa und der Welt übernehmen Wir müssen geopolitisch handlungsfähiger werden und unsere berechtigten nationalen Interessen strategisch klug vertreten , statt unsere internationalen Partner arrogant zu belehren.",Keine Behauptung,0
+"• Wir stehen für ein Europa, das sich in die richtige Richtung entwickelt : weniger Bürokratie, mehr Wettbewerbsfähigkeit.",Keine Behauptung,0
+Wir wollen die transatlantische Partnerschaft als Fundament der westlichen Welt stärken – gerade in bewegten Zeiten .,Keine Behauptung,0
+Wir beleben unsere Beziehungen zu Frankreich und Polen neu :,Keine Behauptung,0
+"Wir setzen Impulse beim Vorgehen gegen illegale Migratio n, für Wirtschaft und Innovationen , Sicherheit und Verteidigung und bauen die Infrastruktur in Richtung unsere r Nachbarländer aus .",Keine Behauptung,0
+Wir schaffen einen Nationalen Sicherheitsrat mit Sitz im Bundeskanzleramt.,Keine Behauptung,0
+"Damit vernetzen wir Außen -, Sicherheits -, Verteidigungs -, Handels -, Europa und Entwicklungspolitik .",Keine Behauptung,0
+"Wir unterstützen die Ukraine mit diplomatisch en, finanziell en und humanitären Mitteln sowie mit Waffenlieferungen .",Keine Behauptung,0
+Israel stehen wir bei seinem legitimen Kampf gegen den Terror zur Seite .,Behauptung,1
+"Für Freiheit, Frieden und Sicherheit Frieden in Sicherheit und Freiheit ist die Richtschnur für unser sicherheitspolitisches Handeln.",Behauptung,1
+Dafür bauen wir eine starke Bundeswehr auf.,Keine Behauptung,0
+• Wir führen eine aufwachsende Wehrpflicht ein.,Keine Behauptung,0
+Das ist notwendig für Frieden und Sicherheit unseres Landes.,Behauptung,1
+Wir stehen zum Zwei -Prozent -Ziel – mindestens .,Keine Behauptung,0
+Denn d ie NATO ist unsere Sicherheit sgarantie .,Behauptung,1
+Wir stärken unsere Sicherheits und Verteidigungsindustrie .,Keine Behauptung,0
+Bei der Beschaffung von Material und Ausrüstung wollen wir mehr Zusammenarbeit und Produktion in Europa.,Keine Behauptung,0
+Wir übernehmen die Führung beim Aufbau eines europäischen Raketenabwehrs chirms.,Keine Behauptung,0
+Die Bedrohung aus der Luft ist größer denn je.,Behauptung,1
+Leitkultur und Zusammenhalt leben,Keine Behauptung,0
+"Es gibt in unserem Land gewachsene Spielregeln und Normen, die von allen, die hier leben wollen, anerkannt und respektiert werden müssen.",Behauptung,1
+• Wir führen verpflichtende Integrationsvereinbarungen ein .,Keine Behauptung,0
+Für ein klares Bekenntnis zu unseren Werten,Keine Behauptung,0
+"Unser Ziel ist, Integration eng zu begleiten und einzufordern .",Keine Behauptung,0
+Wir schaffen bessere Startchancen durch ein breite s Angebot an Deutsch und Integrationskursen.,Keine Behauptung,0
+Allen muss klar sein: Ohne deutsche Sprache geling t Integration nicht .,Behauptung,1
+"Wir machen d ie Express -Einbürgerung der Ampel rückgängig , ebenso wie die generelle Möglichkeit der doppelten Staatsbürgerschaft.",Keine Behauptung,0
+Der deutsche Pass steht am Ende der Integration und nicht am Anfang.,Keine Behauptung,0
+"Wir entlasten Sportvereine und Menschen, die sich für andere engagieren.",Keine Behauptung,0
+Die Ehrenamts und die Übungsleiterpauschale erhöhen wir spürbar.,Keine Behauptung,0
+Wir setzen perspektivisch auf ein verpflichtende s Gesellschaftsjahr .,Keine Behauptung,0
+Das eröffne t jungen Menschen Chancen und schafft ein neues Wir -Gefühl.,Behauptung,1
+• Wir unterbinden ein en ferngesteuerten Islam.,Keine Behauptung,0
+Schluss mit de m,Keine Behauptung,0
+ausländischer Regi erungen über Moscheevereine und Islamverbände auf die deutschen Muslime !,Keine Behauptung,0
+"Familie n unterstützen, Verantwortung übernehmen",Keine Behauptung,0
+Familien sind echte Leistungsträger und schaffen Stabilität.,Behauptung,1
+"Unser Anspruch : Wir geben Familien genug Spiel raum , um ihr Leben eigenverantwortlich gestalten zu können.",Keine Behauptung,0
+• Wir verbessern Elternzeit und Elterngeld .,Keine Behauptung,0
+Sie geben Familien mehr Zeit und unterstützen den Wunsch nach Aufgaben teilung .,Behauptung,1
+Wir entwickeln perspektivisch den Kinderfreibetrag in Richtung des Grundfreibetrags der Eltern.,Keine Behauptung,0
+Entsprechend heben wir auch das Kindergeld an.,Keine Behauptung,0
+Zudem halten wir am Ehegattensplitting fest und wollen Kinder künftig stärker berücksichtigen .,Keine Behauptung,0
+Zudem erhöhen wir die steuerliche Absetzbarkeit von Betreuungskosten .,Keine Behauptung,0
+Wir schaffen das Selbstbestimmungsgesetz der Ampel wieder ab.,Keine Behauptung,0
+Der Jugendschutz und das Erziehungsrecht der Eltern dürfen nicht untergraben werden.,Behauptung,1
+Für gute Bildung Kinder sind unsere Zukunft und brauchen beste Startmöglichkeiten von Anfang an – und zwar alle.,Behauptung,1
+"Dreh und Angelpunkt ist ein funktionierendes, verlässliches Bildungssystem.",Behauptung,1
+• Wir setzen auf verpflichtende Sprachtests im Vorschulalter.,Keine Behauptung,0
+Kinder mit Sprachproblemen müssen eine Kita oder Vorschule besuchen .,Keine Behauptung,0
+"Wir stellen Anstrengung und Leistung wieder in den Mittelpunkt , angefangen bei Kernfächern wie Mathe und Deutsch bis hin zu den Bundesjugendspielen.",Keine Behauptung,0
+Wir wollen ein bundesweit vergleichbares Abitur auf hohem Niveau .,Keine Behauptung,0
+Bei den Anforderungen darf es keine Abstriche geben .,Behauptung,1
+Wir unterstützen die Entwicklung der Berufsschulen.,Keine Behauptung,0
+Für Flexibilität im Beruf fördern wir Teil und Weiterqualifizierungen.,Keine Behauptung,0
+Wir verbessern das BAföG und die Hinzuverdienstmöglichkeiten.,Keine Behauptung,0
+"Zudem sorgen wir dafür, dass die Beantragung unbürokratischer und schneller wird.",Keine Behauptung,0
+"Wir stehen für eine hochwertige Gesundheitsversorgung, die auch auf dem Land verlässlich funktioniert.",Keine Behauptung,0
+"Es geht uns um Daseinsvorsorge, Eigenverantwortung und Prävention.",Keine Behauptung,0
+Worauf es jetzt vor allem ankommt: • Wir stärken die Strukturen in der Gesundheit sund Pflegeversorgung in Stadt und Land .,Behauptung,1
+"Wir sorgen dafür, dass die langen Wartezeiten auf einen Arzttermin sinken.",Keine Behauptung,0
+Wir stärken die Präsenzapotheken und geben ihnen eine Zukunft .,Keine Behauptung,0
+Für viele Menschen sind sie der erste Ansprechpartner bei gesundheitlichen Problemen.,Behauptung,1
+Wir verbessern die häusliche Pflege und die Situation der Angehörigen.,Keine Behauptung,0
+Pflege rische Leistungen müssen flexibler eingesetzt werden können.,Keine Behauptung,0
+"Wir gehen den Personalnotstand an , indem wir den Pflegeberuf attraktiver machen .",Keine Behauptung,0
+Es muss mehr Planbarkeit und Aufstiegsmöglichkeiten geben .,Behauptung,1
+"Für Bauen, Wohnen und zukunftsfähige Mobilität",Keine Behauptung,0
+"Egal ob Stadt oder Land – Menschen sollen gut leben, wo ihr zu Hause ist.",Keine Behauptung,0
+"Dafür braucht es gleichwertige Lebensverhältnisse und eine Politik, die sich dazu bekennt.",Behauptung,1
+Dazu entschlacken wir das Bauordnungs und Raumordnungsrecht grundlegend und reduzieren die Vorschriften spürbar und verantwort ungsbewusst .,Keine Behauptung,0
+Nur günstige res und mehr Bauen sorgt für günstige re Mieten.,Behauptung,1
+"Wir erlauben dauerhaftes Bauen auch dort, wo bisher nur vereinfachtes Bauen nach Sonderregelungen erlaubt war.",Keine Behauptung,0
+Zudem setzen wir auf einfaches und innovatives Bauen.,Keine Behauptung,0
+Wir stehen für einen wirksamen und angemessenen Mieterschutz – dazu gehören auch die Regeln zur Miethöhe.,Keine Behauptung,0
+Der soziale Wohnungsbau muss solide gefördert und das Wohngeld regelmäßig angepasst werden .,Behauptung,1
+Wir machen Kosten für energetische Sanierungen von der Erbschaft und Schenkungsteuer abzugsfähig.,Keine Behauptung,0
+So fördern wir die effiziente energetische Sanierung des Immobilienbestands .,Keine Behauptung,0
+"Wir machen die Bahn flott , indem wir die Strukturen angehen .",Keine Behauptung,0
+Für mehr Wettbewerb müssen Infrastruktur und Transportbereich stärker als bisher voneinander getrennt werden.,Behauptung,1
+Wir stehen zum Auto und zur Automobilindustrie.,Keine Behauptung,0
+Das Verbrenner -Verbot muss rückgängig gemacht werden.,Behauptung,1
+Für die E -Mobilität muss die Ladeinfrastruktur angemessen ausgebaut werden.,Behauptung,1
+"Wir machen d ie digitale Kraftfahrzeug -Anmeldung zum Standard, indem wir sie bundesweit einheitlich und unkompliziert gestalten.",Keine Behauptung,0
+Das gilt auch für die Einbindung der Versicherer.,Keine Behauptung,0
+Zudem führen wir die digitale Fahrzeugakte ein.,Keine Behauptung,0
+Funktionierender Staat – unser Zukunftsversprechen,Keine Behauptung,0
+Die Ampel hat gestritten und Vertrauen zerstört.,Behauptung,1
+"Wir wollen handeln und Vertrauen zurückgewinnen – schneller, effizienter, digital und mit schlankeren Strukturen.",Keine Behauptung,0
+• Wir halbieren die Zahl der Beauftragten und kommen in der Ministerialverwaltung und der Bundestagsverwaltung mit mindestens zehn Prozent weniger Personal aus.,Keine Behauptung,0
+Wir halten an der Schuldenbremse des Grundgesetzes fest.,Keine Behauptung,0
+Die Schulden von heute sind die Steuer erhöhungen von morgen.,Behauptung,1
+Wir schützen deutsche Sparer.,Keine Behauptung,0
+Allen Formen einer Haftung Deutschlands für Schulden anderer EU -Staaten erteilen wir eine klare Absage.,Keine Behauptung,0
+"Wir wollen Planungs und Genehmigungsverfahren beschleunigen – gerade bei Bau, Verkehr und digitalen Infrastrukturen.",Keine Behauptung,0
+"Wir werden mit einem Sofortprogramm ab der ersten Stunde beweisen, dass richtige Politik einen Unterschied machen kann.",Keine Behauptung,0
+"Liebe Wählerinnen und Wähler, liebe Bürgerinnen und Bürger, Sie haben eine Regierung verdient , die unser Land besser regiert .",Behauptung,1
+"Wir freuen uns über jede Hand, die mit anpackt, damit Deutschland wieder nach vorne kommt.",Keine Behauptung,0
+Dafür bitten wir Sie um Ihre Unterstützung – mit Ihren beiden Stimmen für die Union!,Keine Behauptung,0
+"Für ein Deutschland, auf das wir wieder stolz sein können Unsere Bundesrepublik Deutschland ist eine großartige Erfolgsgeschichte: Wiederaufbau, Wirtschaftswunder und Weltmeistertitel, Westbindung, Friedliche Revolution, Wiedervereinigung und Aufbauleistung der Ostdeutschen, Wohlstand, Soziale Marktwirtschaft mit guter Arbeit und starken Sozialversicherungen, „Made in Germany“ als weltweit bekanntes Qualitätssiegel, eine starke Europäische Union, unsere Freundschaft mit Frankreich und Polen, Aussöhnung mit Israel und transatla ntische Partnerschaft, Freiheit und Si cherheit.",Behauptung,1
+"Die vergangenen Jahre zeichnen leider ein anderes, schlechteres Bild unseres Landes:",Behauptung,1
+"Die Wirtschaft schrumpft, unsere Industrie ist international unter Druck, die Infrastruktur zum Teil marode.",Behauptung,1
+"Die Arbeitslosigkeit steigt, die sozialen Sicherungssysteme si nd in Schieflage.",Behauptung,1
+Populisten und Extremisten vertiefen die Spaltung immer weiter.,Behauptung,1
+Zugleich erleben wir Herausforderungen historischen Ausmaßes: Deutschland und Europa müssen sich der Bedrohung ihrer Sicherheit erwehren und sind weiter mit massiver illegaler Migration konfrontiert.,Behauptung,1
+Hinzu kommen tiefgreifende Umbrüche im Zuge der Digitalisierung und nicht zuletzt die Menschheitsaufgabe Klimawandel.,Behauptung,1
+"Wir wissen um die Talente und Fähigkeiten, die jeder Einzelne mitbringt.",Keine Behauptung,0
+"Wir wissen, dass mit Eigenverantwortung, Leistung und Solidarität wieder etwas Großes entstehen kann.",Keine Behauptung,0
+Wir glauben an die Kraft und den Ideenreichtum der Menschen.,Keine Behauptung,0
+"Wir glauben an ein wehrhaftes Deutschland, das Verantwortung in Europa und der Welt übernimmt und seine Interessen selbstbewusst vertritt.",Keine Behauptung,0
+Wir glauben an die große Kraft in unserem Land.,Keine Behauptung,0
+"Dafür braucht unser Land eine Regierung, die verlässlich arbeitet und die wirklich wichtigen Dinge anpackt: Wohlstand für alle , Sicherheit und Zusammenhalt .",Behauptung,1
+Unser Land braucht Stabilität und Aufbruch.,Behauptung,1
+Unser Land braucht einen Politikwechsel .,Behauptung,1
+Dafür treten wir als CDU und CSU bei der Bundestagswahl gemeinsam an.,Keine Behauptung,0
+"Wir glauben daran, dass Deutschland mit einer neuen Politik wieder nach vorne kommt.",Keine Behauptung,0
+"Wir sorgen dafür, dass Deutschland mit einer neuen Politik wieder nach vorne kommt.",Keine Behauptung,0
+Wir setzen einen starken Impuls für Aufbruch und Zuversicht .,Keine Behauptung,0
+"Wir wollen ein Land, das wieder Wohlstand für alle schafft .",Keine Behauptung,0
+"Wir wollen e in Land, das frei und wieder sicher ist.",Keine Behauptung,0
+"Wir wollen e in Land, das wieder zusammenhält.",Keine Behauptung,0
+Wir wollen Deutschland wieder nach vorne bringen.,Keine Behauptung,0
+"Unser Plan für ein Land, das wieder Wohlstand für alle schafft Deutschland ist e ine starke Volkswirtschaft.",Keine Behauptung,0
+"Wir sind das Land des Mittelstands und der Familienunternehmen, der Hidden Champions und des Handwerks, der Selbständigen und der freien Berufe, der innovativen Gründer und der weltweit erfolgreichen Industrie und Dienstleistungsunternehmen.",Behauptung,1
+"Und überall und mittendrin: fleißige Arbeitnehmerinnen und Arbeitnehmer, die unser Land am Laufen halten, kreative Erfinder , exzellente Ingenieure und Landwirte, die uns mit hochwertigen Lebensmitteln versorgen .",Behauptung,1
+"Darauf können wir setzen, auch in schwierige r Zeit – und das müssen wir auch .",Keine Behauptung,0
+"Die wirtschaft liche Lage in unserem Land ist angespannt , die industrielle Basis brüchig geworden und damit auch die Stabilität unseres sozialen Netzes.",Behauptung,1
+"Viele Unternehmen und Betri ebe klagen über hohe Energiepreise, Bürokratiewahnsinn und neue Regulierung am laufenden Band, fehlende Fachkräfte und eine erdrückende Steuerlast.",Keine Behauptung,0
+"Und wer nicht klagt, hat schon aufgegeben – entweder den Standort Deutschland, um anderswo zu produzieren, oder ganz und gar.",Behauptung,1
+Immer mehr Bürgerinnen und Bürger fragen sich:,Keine Behauptung,0
+"Sie wünschen sich eine Gesellschaft , in der sich Leistung lohnt und zugleich denen die Hand gereicht wird , die auf Hilfe angewiesen sind.",Keine Behauptung,0
+"Wir stehen zur Sozialen Marktwirtschaft , wir stehen zu Wettbewerb , Wachstum und Wohlstand .",Keine Behauptung,0
+"Für uns ist klar: „Wohlstand für alle “ geht nur mit Freiräumen und Planungssicherheit für die Wirtschaft, mit einem starken und gerechten Sozialstaat, mit Eigenverantwortung und Fleiß, der auch belohnt wird.",Keine Behauptung,0
+Dafür braucht unser Land jetzt einen Politikwechsel.,Behauptung,1
+"Wir wollen e in Land, das wieder Wohlstand für alle schafft.",Keine Behauptung,0
+Wir wollen Deutschland wieder nach vorne bringen.,Keine Behauptung,0
+Ja zu einer Agenda für die Fleißigen Unser Plan: Leistung muss sich wieder lohnen.,Behauptung,1
+Arbeits und Fachkräfte gewinnen.,Keine Behauptung,0
+"Leistung muss sich wieder lohnen Arbeit ist sinnstiftend und schafft Wohlstand , wenn die eigene Anstrengung auch belohnt wird.",Behauptung,1
+Die Belastung durch Steuern und andere Abgaben in unserem Land ist zu hoch.,Behauptung,1
+"Wir brauchen daher eine Agenda für die Fleißigen, eine breite Entlastung für die Bevölkerung :",Behauptung,1
+"Niedrigere Steuern und Beiträge sorgen zudem für höhere Löhne, mehr Arbeitsplätze , stärkeres Wachstum und sichere Sozialsysteme .",Behauptung,1
+Dazu flachen wir den Einkommensteuertarif schrittweise spürbar ab und erhöhen d en Grundfreibetrag.,Keine Behauptung,0
+Die Einkommensgrenze für den Spitzensteuersatz erhöhen wir deutlic h. •,Keine Behauptung,0
+Unser Ziel für d ie Sozialversicherungsbeiträge : Wir wollen uns wieder auf die  Prozent hinbewegen .,Keine Behauptung,0
+Mit einem jährlichen „Sozialstaatstragfähigkeitsbericht“ haben wir die Entwicklung der Sozialkassen fest im Blick und ergreifen erforderliche Maßnahmen .,Keine Behauptung,0
+Belastungen durch Inflation verhindern.,Keine Behauptung,0
+Steigende Preise dürfen nicht zu höherer Einkommensteuerlast führen.,Behauptung,1
+Deshalb passen wir den Einkommensteuertarif regelmäßig an die Inflation an und gleichen so die kalte Progression aus.,Keine Behauptung,0
+Dabei berücksichtigen wir auch alle inflationssensiblen Abzugsbeträge.,Keine Behauptung,0
+So stärken wir unsere Leistungsträger im ländlichen Raum.,Behauptung,1
+Wir stellen Überstunden zuschläge bei Vollzeitbeschäftigung steue rfrei.,Keine Behauptung,0
+"Wer freiwillig mehr arbeiten will, soll mehr Netto vom Brutto haben.",Keine Behauptung,0
+Schnelle Entlastungen in Krisen ermöglichen.,Keine Behauptung,0
+"Wir setzen uns in Europa dafür ein, dass in angespannter Lage die Energie und Umsatzsteuer für Güter des täglichen Bedarfs schnell und ohne langwierige Genehmigung reduziert werden dürfen.",Keine Behauptung,0
+"Unser Arbeitsrecht ist in die Jahre gekommen, eine Modernisierung mehr als überfällig.",Behauptung,1
+"Wir müssen die Veränderungen in einer modernen, digitalen Arbeitswelt berücksichtigen und insbesondere die Entwicklungen hin zu einer flexibleren Arbeitszeitgestaltung a ufgreifen.",Behauptung,1
+Wir reformieren das Arbeitszeitgesetz und legen für alle Unternehmen anstelle der täglichen eine wöchentliche Höchstarbeitszeit im Sinne der europäischen Arbeitszeitrichtlinie fest.,Keine Behauptung,0
+Hohe Standards beim Arbeitsschutz wahren .,Keine Behauptung,0
+Das gilt vor allem bei gefahrgeneigten Berufen.,Keine Behauptung,0
+"Hier berücksichtigen wir die besonderen Schutzerfordernisse, weil das Unfallrisiko nach acht Stunden steigt.",Keine Behauptung,0
+Rechtssicher mobil und im Homeoffice arbeiten.,Keine Behauptung,0
+Wir gestalten die Vorgaben für mobile Arbeitsplätze praxisnäher.,Keine Behauptung,0
+"Gleichzeitig stellen wir klar, dass mobiles Arbeiten an frei gewählten Orten nicht in den Anwendungsbereich der Arbeitsstättenverordnung fällt.",Keine Behauptung,0
+Auch für das Homeoffice schaffen wir Rechtssich erheit und fördern damit mobile Arbeitsformen:,Keine Behauptung,0
+"Sofern freiwillig gewählt, definieren wir es unabhängig vom zeitlichen Umfang als einen Unterfall des mobilen Arbeitens.",Keine Behauptung,0
+In Europa mobil arbeiten.,Keine Behauptung,0
+Das grenzüberschreitende mobile Arbeiten innerhalb der EU muss sowohl für Arbeitnehmerinnen und Arbeitnehmer als auch für Arbeitgeberinnen und Arbeitgeber rechtssicher und möglichst flexibel werden.,Behauptung,1
+• Personalpartnerschaften erleichtern und rechtssicherer machen.,Keine Behauptung,0
+So können sich zwei Unternehmen im Rahmen einer Kooperation freie Personalkapazitäten mit Zustimmung der Betriebsräte untereinander zur Verfügung stellen.,Keine Behauptung,0
+Arbeits und Fachkräfte gewinnen,Keine Behauptung,0
+Der Arbeits und Fachkräftemangel bremst unsere wirtschaftliche Entwicklung.,Behauptung,1
+Aus demografischen Gründen verschärft er sich weiter und wird zu einem echten Standortrisiko.,Behauptung,1
+"Eigentlich könnten die Unternehmen mehr produzieren, doch dafür fehlt das Personal.",Behauptung,1
+Mit einer Fachkräfteoffensive bekämpfen wir das Problem und sorgen für mehr Produktivität.,Keine Behauptung,0
+Für ausländische Fachkräfte wollen wir ein attraktiver Standort sein und lebenswerte Heimat werden.,Keine Behauptung,0
+Hürden aus dem Weg räumen.,Keine Behauptung,0
+Vor allem Frauen in Teilzeit sind eine Gruppe mit großem Potenzial für den Arbeitsmarkt .,Behauptung,1
+Es braucht bessere Rahmenbedingungen für Vollzeit arbeit oder vollzeitnahe Arbeit .,Behauptung,1
+Haushaltsnahe Dienstleistungen stärken .,Keine Behauptung,0
+Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen.,Keine Behauptung,0
+Menschen in Helfertätigkeiten fördern wir auf ihrem Weg zu einer qualifizierten Fachkraft und entwickeln Anreize zum Erwerb beruflicher Qualifikationen.,Keine Behauptung,0
+Vorbeschäftigungsverbot nach dem Erreichen der Regelaltersgrenze abschaffen .,Keine Behauptung,0
+Ausländische Fachkräfte gewinnen.,Keine Behauptung,0
+Dabei ist eine gute Qualifikation von zentraler Bedeutung.,Keine Behauptung,0
+So kann dauerhafte Beschäftigung erreicht werden.,Behauptung,1
+Den Fokus legen wir auf die vereinfachte und beschleunigte Anerkennung ausländischer Berufsqualifikationen.,Keine Behauptung,0
+Schnellere und digitale Prozesse für Erwerbszuwanderer.,Keine Behauptung,0
+Dazu richten wir eine digitale Bundesagentur für Einwanderung („Work -and -Stay -Agentur“) ein.,Keine Behauptung,0
+Fachkräfte erhalten so Service aus einer Hand: von der Anwerbung und Arbeitsplatzvermittlung über die Prüfung der Einreise voraussetzungen und Visavergabe bis hin zum Aufenthaltstitel .,Keine Behauptung,0
+Wir trennen die Asylverfahren von den Verfahren zur Einwanderung in den Arbeitsmarkt.,Keine Behauptung,0
+Unser Plan: Steuerlast verringern.,Keine Behauptung,0
+Bürokratie spürbar abbauen.,Keine Behauptung,0
+Resilienz der Wirtschaft stärken.,Keine Behauptung,0
+Freien Handel und Exporte unterstützen.,Keine Behauptung,0
+Deutschland ist für Unternehmen ein Hochsteuerland.,Keine Behauptung,0
+Ein erfolgreicher und gefragter Wirtschaftsstandort muss auch bei der Steuerbelastung wettbewerbsfähig sein.,Behauptung,1
+"So ermöglichen wir höhere Löhne, mehr Arbeitsplätze und mehr Wachstum.",Behauptung,1
+"Und so schaffen wir die Grundlage dafür , dass unsere Städte und Gemeinden eine verlässliche und auskömmliche Finanzausstattung haben und die unterschiedlichen Herausforderungen vor Ort aus eigener Kraft meistern können.",Behauptung,1
+"Unser Ziel ist eine attraktive Unternehmens besteuer ung von maximal  Prozent auf einbehaltene Gewinne , die wir schrittweise umsetzen wollen .",Keine Behauptung,0
+Dazu senken wir insbesondere die Tarifbelastung und verbessern wesentlich das Optionsmodell und die Thesaurierungsbegünstigung.,Keine Behauptung,0
+"Bei den bestehenden Steuersystemen für Kapitalgesellschaften und Personengesellschaften schaffen wir mehr Wahlrechte , Einheitlichkeit und Durchlässigkeit.",Keine Behauptung,0
+Weg mit dem Rest -Soli.,Keine Behauptung,0
+Wir schaffen den restlichen Solidaritätszuschlag ab.,Keine Behauptung,0
+"Er hat seine Aufgabe längst erfüllt, ist fast  Jahre nach der Wiedervereinigung nicht mehr zu rechtfertigen und belastet Unternehmen, Fachkräfte und Sparer.",Behauptung,1
+Dazu weiten wir den Verlustrücktr ag aus und schaffen die Beschränkung des Verlustvortrags durch die Mindestbesteuerung ab.,Keine Behauptung,0
+Mit Abschreibungen neue Impulse geben.,Keine Behauptung,0
+Dazu fassen wir die AfA -Tabellen neu und aktualisieren die Abschreibungsdauern.,Keine Behauptung,0
+Unser Ziel sind digitalisierte Tabellen mit den betriebsgewöhnlichen Nutzungsdauern.,Keine Behauptung,0
+Wir wollen Turboabschreibungen für einen schnellen Wachstumsimpuls .,Keine Behauptung,0
+Auch die nächste Generation soll ein Unternehmen weiterführen können.,Keine Behauptung,0
+Deshalb belasten wir Familienunternehmen in der Erbfolge nicht in der Substanz und vereinfachen Unternehmensnachfolgen.,Keine Behauptung,0
+• Gastro -Steuer runter.,Keine Behauptung,0
+Wir reduzieren die Umsatzsteuer auf Speisen in der Gastronomie auf sieben Prozent.,Keine Behauptung,0
+Bürokratie spürbar abbauen,Keine Behauptung,0
+"Dokumentations und Meldepflichten, mangelnde Flexibilität, lange Verfahren sowie Vollzugsprobleme in Behörden :",Behauptung,1
+"Das kostet unnötig Geld, Zeit, Nerven und Personal, gerade im Mittelstand.",Behauptung,1
+"Schlimmer noch: Unternehmen und alle, die anpacken wollen, verlieren den Mut für Neues.",Behauptung,1
+"Bürokratieabbau, das heißt in Wahrheit „Freiheit zurückgeben “.",Behauptung,1
+Wir wollen eine Kultur des Machens und nicht der Fehlervermeidung.,Keine Behauptung,0
+"Früher waren wir stolz, wie schnell in Deutschland Dinge funktionierten.",Behauptung,1
+Unser Land vom Bürokratiewahnsinn heilen .,Keine Behauptung,0
+"Wir beschließen Jahresgesetze zum Bürokratieabbau als echte Entrümpelungsgesetze und stärken die Bürokratiebremse („One in, two out“).",Keine Behauptung,0
+"Wo sinnvoll möglich, geben wir Gesetzen und Regelungen ein Verfallsdatum.",Keine Behauptung,0
+"Wir wollen genau wissen , wo der Schuh drückt:",Keine Behauptung,0
+Deshalb machen wir mehr Bürokratie Checks in enger Zusammenarbeit mit den betroffenen Unternehmen.,Keine Behauptung,0
+Wir holen den Nationalen Normenkontrollrat (NKR) sowie die Zuständigkeit für Bürokratieabbau und bessere Rechtsetzung zurück in das Bundeskanzleramt.,Keine Behauptung,0
+"Für einen echten Mehrwehrt stellen wir ihn schlagkräftiger auf und straffen die Strukturen , auch damit der NKR verschärft untergesetzliche Vorschriften in den Blick nehmen kann.",Keine Behauptung,0
+Belastung en sofort stoppen .,Keine Behauptung,0
+Das deutsche Lieferkettengesetz schaffen wir ab.,Keine Behauptung,0
+"In Europa wollen wir Belastungen einen Riegel vorschieben , etwa der Regulierung für nachhaltige Investitionen (Taxonomie) oder der Nachhaltigkeitsberichterstattung (Corporate Sustainability Reporting).",Keine Behauptung,0
+"Weil wir den Menschen grundsätzlich vertrauen, wollen wir zur vertrauensbasierten Gesetzgebung zurückkommen .",Keine Behauptung,0
+"Daher werden wir ein „EU-Forechecking “ einführen, um in Brüssel viel früher, strategischer und erfolgreicher bei europäischen Rechtsakten mitzuwirken.",Keine Behauptung,0
+"Mit einem Gesetz gegen Draufsatteln – „Anti -Gold -Plating Gesetz“ – nehmen wir Regelungen zurück, die über europäisches Recht hinausgehen, und unterbinden künftig jegliche Übererfüllung.",Keine Behauptung,0
+Parallelregulierungen auf europäischer und nationaler Ebene lehnen wir ab.,Keine Behauptung,0
+"Wir kehren in Handwerk, Einzelhandel, Gastronomie oder Hotellerie bei Dokumentationspflichten die Beweislast um und ersetzen die regelmäßigen Nachweise durch ein Anzeigerecht von Verstößen.",Keine Behauptung,0
+"Wir reduzieren Statistikpflichten, Datenerhebungen und Meldungen durch ein Verweisungsrecht für Unternehmen.",Keine Behauptung,0
+Dafür muss die Behördenkommunikation über bereits vorliegende Daten besser werden.,Behauptung,1
+Auch Doppelstrukturen bei den Statistikämtern müssen konsequent abgebaut werden .,Behauptung,1
+Schriftform im Arbeitsrecht lockern.,Keine Behauptung,0
+Wir stellen alle noch bestehenden arbeitsrechtlichen Erfordernisse der Niederschrift auf Papier mit eigenhändiger Unterschrift und persönlicher oder postalischer Übergabe auf den Prüfstand.,Keine Behauptung,0
+"Nur dort, wo es zwingend ist, soll die Schriftform beibehalten werden, zum Beispiel bei Kündigungen und branchenspezifischer Schutzbedürftigkeit.",Behauptung,1
+"Wir machen uns dafür stark, dass insbesondere das Verfahren zur grenzüberschreitenden Entsendung von Erwerbstätigen in das EU -Ausland vereinfacht und digitalisiert wird (A1 -Bescheinigung, Melde und Registrierungsverfahren).",Keine Behauptung,0
+"• Rechtssicherheit schaffen, Scheinselb ständigkeit verhindern.",Keine Behauptung,0
+Wir passen das Statusfeststellungsverfahren im Sinne der Selb ständigen und Unternehmen an .,Keine Behauptung,0
+Schluss mit immer mehr Betriebsb eauftragten.,Keine Behauptung,0
+"Die Pflicht zur Bestellung von Betriebsbeauftragten – zum Beispiel für Abfall , Brandschutz oder Sicherheit – belastet kleine und mittlere Unternehmen sehr.",Behauptung,1
+"Wir befreien sie davon und vereinheitlichen die Schwellenwerte, ab denen Beauftragte berufen werden müssen.",Keine Behauptung,0
+Auch die Steuerbürokratie nimmt zu und ist eine große Belastung – für die Bürgerinnen und Bürger genauso wie für die Unternehmen.,Behauptung,1
+Wir misten bei den Vorschriften aus und schaffen ein einfacheres Steuerrecht.,Keine Behauptung,0
+Unternehmen den Alltag erleichtern .,Keine Behauptung,0
+Die Aufbewahrungsfrist für Buchungsbelege im Handels und Steuerrecht verkürzen wir einheitlich von acht auf fünf Jahre.,Keine Behauptung,0
+"Das setzt voraus, dass die Betriebsprüfungen zügiger erfolgen sowie stärker automatisier t und deutlich beschleunig t werden .",Keine Behauptung,0
+Das erhöht auch die Rechtssicherheit und verbessert die Wettbewerbsbedingungen.,Behauptung,1
+Steuererklärungspflichten für Rentner und Pensionäre vereinfachen.,Keine Behauptung,0
+"Wir führen einen Quellenabzug ein, damit im Regelfall keine Steuererklärung mehr abge geben werden muss.",Keine Behauptung,0
+Doppelbesteuerung von Renten vermeiden wir.,Keine Behauptung,0
+Wir treiben die Selbstveranlagung und den digitalen Datenaustausch mit der Finanzverwaltung voran.,Keine Behauptung,0
+Unser Ziel ist eine vollautomatisierte Veranlagung.,Keine Behauptung,0
+Mit mehr Pauschalierungen und Typisierungen vereinfachen wir insbesondere das Einkommensteuerrecht.,Behauptung,1
+Spielräume des EU -Rechts nutzen.,Keine Behauptung,0
+"Wir führen das Verrechnungsmodell bei der Einfuhrumsatzsteuer ein, um Bürokratie und Liquiditätsbelastung möglichst gering zu halten.",Keine Behauptung,0
+Steuergesetze l esen und verstehen.,Keine Behauptung,0
+"Sie müssen für Bürger, Unternehmen und Verwaltung verständlicher werden.",Behauptung,1
+"Dazu vereinfachen wir vor allem die Gesetzessprache und streichen veraltete Vorschriften, die nicht mehr angewendet werden.",Keine Behauptung,0
+"Konsequente Digitalisierung, bessere Kontrolle.",Keine Behauptung,0
+Wir digitalisieren und automatisieren Besteuerungsverfahren und stellen KI -Technologie bereit.,Keine Behauptung,0
+"Das hilft Finanzbehörden auch dabei, Steuerpflichten zu kontrollieren und Steuerbetrug wirksam zu bekämpfen.",Behauptung,1
+Resilienz der Wirtschaft stärken Geoökonomische Herausforderungen und Krisen nehmen zu ;,Behauptung,1
+sie sind ein ernstes Problem für unsere Wirtschaft.,Behauptung,1
+Wir müssen die Resilienz unserer Wirtschaft stärken und ihr Rechts und Planungssicherheit geben.,Behauptung,1
+"Das geht nur gemeinsam mit unseren Partnern in Europa, das geht nur mit einem starken Binnenmarkt.",Behauptung,1
+"Genau wie die Sicherheitspolitik ist die Wirtschaftspolitik auch gefragt, Antworten auf Übernahmen durch Systemkonkurrenten oder Cyberangriffe zu finden, die ganze Unternehmen und Lieferketten lahmlegen.",Keine Behauptung,0
+„Grundgesetz der Sozialen Marktwirtschaft“ rechtssicher machen.,Keine Behauptung,0
+Wir binden die wettbewerbsrechtlichen Befugnisse des Bundeskartellamts zum Markteingriff wieder an einen Rechtsverstoß.,Keine Behauptung,0
+Einen Generalverdacht gegenüber der Wirtschaft lehnen wir entschieden ab.,Keine Behauptung,0
+Fairer Wettbewerb in Europa.,Keine Behauptung,0
+"Wir setzen uns für ein modernes Kartell und Wettbewerbsrecht ein, das den globalen Markt als Maßstab zugrunde legt .",Keine Behauptung,0
+Missbrauchskontrolle starker Abnehmer verbessern.,Keine Behauptung,0
+Wir stärken d en Schutz von Erzeugern und Lieferanten vor unlauteren Handelspraktiken .,Keine Behauptung,0
+"Wir führen wirkungsvolle Instrumente zur Krisenbewältigung und gegen Subventionen ein, die den weltweiten Wettbewerb verzerren.",Keine Behauptung,0
+Rechte an geistigem Eigentum konsequent durchsetzen.,Keine Behauptung,0
+Wir legen den Fokus auf die Bekämpfung der Produkt und Markenpiraterie sowie die Produktsicherheit .,Keine Behauptung,0
+So stärken wir die Innovations und Schöpfungskraft der deutschen Wirtschaft.,Behauptung,1
+"Wir schützen sicherheitsrelevante Technologien, kritische Infrastrukturen und Unternehmen vor Übernahmen durch systemische Rivalen.",Keine Behauptung,0
+"Wir sorgen dafür, dass insbesondere der Mittelstand besser informiert und sensibilisiert ist.",Keine Behauptung,0
+"Wegen ihrer Innovations und Wirtschaftskraft sind mittelständische Unternehmen begehrte Angriffsziele internationaler Konkurrenten, fremder Nachrichtendienste und Krimineller.",Behauptung,1
+Für die Cybermaßnahmen kleine r und mittlere r Unternehmen schaffen wir steuerliche Anreize und günstige Finanzierungen.,Keine Behauptung,0
+"Unser Ziel ist , dass Deutschland Weltmarktführer für sichere IT -Lösungen und attraktiver Standort für innovative Unternehmen der Cybersicherheit wird.",Keine Behauptung,0
+Freien Handel und Exporte unterstützen,Keine Behauptung,0
+Trotzdem bleibt Deutschland eine Exportwirtschaft.,Behauptung,1
+Jeder vierte Arbeitsplatz hängt am Export – und ein Großteil unseres Wohlstands.,Behauptung,1
+"Aber: D er Welthandel schwächelt, Protektionismus und unlautere Handelspraktiken nehmen zu, Lieferengpässe und steigende Rohstoffpreise werden zur Belastung für Unternehmen .",Behauptung,1
+"Unser Kompass bleibt: Wir unterstützen den freien Handel, damit wir wieder aufholen und Arbeitsplätze sichern .",Keine Behauptung,0
+Dabei puffern wir die internationalen und globalen Risiken besser ab .,Keine Behauptung,0
+Aus Deutschland muss eine resiliente Exportwirtschaft werden.,Behauptung,1
+"Wir sorgen dafür, dass sich unsere internationale Zusammenarbeit gezielt an den strategischen Wirtschaftsinteressen Deutschlands orientiert.",Keine Behauptung,0
+Außenwirtschaftsförderung und Entwicklungszusammenarbeit verzahnen wir dazu besser .,Keine Behauptung,0
+"Wir setzen uns auch in der Organisation für wirtschaftliche Zusammenarbeit und Entwicklung dafür ein, dass die deutsche Wirtschaft deutlich stärker von staatlich finanzierten Entwicklungsprojekten profitiert.",Keine Behauptung,0
+Wir schließen neue Energie und Rohstoffpartnerschaften und setzen uns auf europäischer Ebene für pragmatische Handelsabkommen ein.,Keine Behauptung,0
+Fair handeln statt abschotten.,Keine Behauptung,0
+"Bei marktverzerrenden Subventionen und Exportbeihilfen setzen wir auf das EU -Antisubventionsverfahren und einen wirksamen, international anerkannten Streitschlichtungsmechanismus bei der Welthandelsorganisation.",Keine Behauptung,0
+Grundsätzlich sind Zölle nicht der richtige Weg.,Behauptung,1
+Globaler Handel funktioniert nur auf der Basis gleicher Rechte und Pflichten.,Behauptung,1
+Deshalb folgen wir dem Grundsatz der Gegenseitigkeit (Reziprozität).,Keine Behauptung,0
+Exportorientierte Unternehmen brauchen guten Zugang zu Kapital und staatliche Garantien zur Risikoabsicherung.,Behauptung,1
+Wir machen die neuen klimapolitischen Sektorleitlinien für Garantien rückgängig.,Keine Behauptung,0
+"Eine Unterscheidung in gute und in weniger gute, in gewünschte und weniger gewünschte Wirtschaftstätigkeit deutscher Unternehmen im Ausland lehnen wir ab.",Keine Behauptung,0
+Außenhandel nicht unnötig behindern.,Keine Behauptung,0
+Dazu beschleunigen wir Ausfuhrgenehmigungen deutlich.,Keine Behauptung,0
+Mercosur ist ausverhandelt und muss jetzt zügig in Kraft treten .,Keine Behauptung,0
+Dabei haben wir die Sicherstellung fairer Wettbewerbsbedingungen zum Schutz unserer Landwirtschaft besonders im Blick.,Keine Behauptung,0
+"Wir unterstützen in der EU neue Abkommen mit Indien und den ASEAN -Staaten und vertiefen Partnerschaften insbesondere mit den USA für einen umfassenden transatlantischen Wirtschafts -, Handels und Zukunftsraum.",Keine Behauptung,0
+"Wir wollen an engen Wirtschaftsbeziehungen zu China festhalten, sofern sie auf dem Prinzip der Gegenseitigkeit beruhen.",Keine Behauptung,0
+"Zugleich werden wir kritische wirtschaftliche Abhängigkeiten verringern, etwa durch die stärkere Diversifizierung von Absatzmärkten, Rohstoff quellen und Lieferketten sowie den Schutz kritischer Infrastruktur und sicherheitsrelevanter Technologie.",Keine Behauptung,0
+"Abhängigkeiten verringern , heißt s ouveräner werden.",Behauptung,1
+Die Produktion von Halbleitern und Batteriezellen in Europa muss stark angekurbelt werden.,Behauptung,1
+Dazu füllen wir das Europäische Chipgesetz zügig mit Leben und nutzen die Europäische Halbleiterallianz,Keine Behauptung,0
+Innovationen „Made in Germany“.,Keine Behauptung,0
+"Gerade in Afrika , aber auch im gesamten globalen Süden und im asiatisch -pazifischen Raum, wollen wir Wirtschaftsbeziehungen intensivieren, auch um das Feld nicht China und Russland zu überlassen.",Keine Behauptung,0
+"Deshalb ist es in unserem Interesse, die Afrikanische Union und andere regionale Zusammenschlüsse dauerhaft zu stärken.",Keine Behauptung,0
+Mit Blick auf Klimaschutz durch Zukunftstechnologien biete n sich für Technologien aus Deutschland große Chancen.,Behauptung,1
+Deshalb unterstützen wir Wirtschaftswachstum auf dem afrikanischen Kontinent und die afrikanische Freihandelszone.,Keine Behauptung,0
+"Wir sichern die Versorgung auch durch einen verantwortungsvollen, heimischen Abbau.",Behauptung,1
+Zudem verstehen wir die aus Recycling entstandenen Wertstoffe als Rohstoffe .,Keine Behauptung,0
+Sie erfüllen die höchsten Ansprüche und sind zugleich nachhaltig.,Keine Behauptung,0
+"Wir reizen das privatwirtschaftliche, nicht -spekulative Anlegen von Vorräten durch eine Rohstoffbevorratungsrücklage an.",Keine Behauptung,0
+"Ja zu bezahlbarer, sicherer und sauberer Energie",Keine Behauptung,0
+Unser Plan: Für bezahlbare Energie sorgen.,Keine Behauptung,0
+Für bezahlbare Energie sorgen,Keine Behauptung,0
+Die Energiekrise hat unser Land verändert.,Behauptung,1
+Höhere Preise bei steigendem Energiebedarf verunsichern Millionen von Menschen sowie Unternehmen gleichermaßen.,Behauptung,1
+Die Politik darf die Augen vor der Realität nicht verschließen.,Behauptung,1
+"Für uns ist klar: Energie muss bezahl bar, sicher und sauber sein.",Behauptung,1
+"Alle Kostentreiber müssen auf den Prüfstand , gleichzeitig ist Energieeffizienz wichtig .",Behauptung,1
+"Dafür treten wir ein, im engen Schulterschluss in der EU und mit unseren internationalen Partnern.",Keine Behauptung,0
+Ideologiefrei und technologieoffen zu bezahlbarer Energie.,Keine Behauptung,0
+"Wir bringen alle Kapazitäten ans Netz, die klimafreundlich und systemdienlich sind, angefangen bei einem zielgerichteten weiteren Ausbau der Erneuerbaren Energien.",Keine Behauptung,0
+"Wir nutzen die Erneuerbaren konsequent, und zwar alle: Windenergie an Land und auf See, Solarenergie, Geothermie, Wasserkraft , Bioenergie und de n nachwachsende n Rohstoff Holz .",Keine Behauptung,0
+Die Potenziale der Kraft Wärme -Kopplung müssen konsequent genutzt werden.,Behauptung,1
+"Wir erhöhen die Versorgungssicherheit durch eine pragmatische Kraftwerkstrategie, die einen technologieoffenen Kapazitätsmarkt etabliert und damit wettbewerblich für Absicherung der gesicherten Leistung sorgt.",Keine Behauptung,0
+"Wir setzen ein Strommarktdesign um, das die neuen Realitäten anerkennt und die notwendigen Investitionen absichert.",Keine Behauptung,0
+Für mehr Preisstabilität entwickeln wir die Terminmärkte weiter.,Keine Behauptung,0
+Versorgungsunternehmen müssen ihre Lieferverträge besser und preisgünstiger absichern können.,Keine Behauptung,0
+• Infrastruktur ganzheitlich denken.,Keine Behauptung,0
+"Ein besonderes Augenmerk legen wir auf den integrierten und grenzüberschreitenden Netzausbau sowie auf eine effiziente Verknüpfung des Ausbaus von Erneuerbaren Energien , Netzen und Speichern .",Keine Behauptung,0
+Dafür wollen wir mehr privates Kapital gewinnen.,Keine Behauptung,0
+Für einen schnellen und günstigen Ausbau von Stromnetzen nutzen wir verstärkt Freileitungen.,Keine Behauptung,0
+"Bei Strom -, Wärme -, Gas -, Wasserstoff und CO2 -Infrastruktur setzen wir auf Standardisierung und gemeinsamen Ausbau.",Keine Behauptung,0
+Wir stehen zum Kohlekompromiss und zum vereinbarten Kohleausstieg.,Keine Behauptung,0
+"Auf dem Weg darf es kein weiteres endgültiges Abschalten von Kohlekraftwerken geben, solange als Ersatz keine neuen Gaskraftwerke und Kraft -Wärme Kopplung s-Anlagen gebaut sind.",Behauptung,1
+Die Zusagen aus dem Strukturstärkungsgesetz und die Vereinbarungen zwischen dem Bund und den betroffenen Ländern halten wir ein.,Keine Behauptung,0
+Option Kern energie .,Keine Behauptung,0
+Gerade auch mit Blick auf die Klimaziele und die Versorgungssicherheit hat diese eine bedeutende Rolle.,Behauptung,1
+"Dabei setzen wir auf die Forschung zu Kernenergie der vierten und fünften Generation , Small Modular Reactors und Fusionskraftwerke n.",Keine Behauptung,0
+"Gleichzeitig streben wir schnellstmöglich eine fachliche Bestandsaufnahme an, ob angesichts des jeweiligen Rückbau stadiums eine Wiederaufnahme des Betriebs der zuletzt abgeschalteten Kernkraftwerke unter vertretbarem technischem und finanziellem Aufwand noch möglich ist .",Keine Behauptung,0
+• Echte Europäische Energieunion.,Keine Behauptung,0
+Ein echter europäischer Energiebinnenmarkt schafft Resilienz und ist mit mehr Angebot gut für die Verbraucher .,Behauptung,1
+Für notwendige Energieimporte und -exporte mobilisieren wir europäische Potenziale und intensivieren internationale Partnerschaften.,Behauptung,1
+Bei den Steuern und anderen Abgaben auf Energie nutzen wir Entlastungss pielräume.,Keine Behauptung,0
+Wir senken die Stromsteuer für alle und reduzieren die Netzentgelte .,Keine Behauptung,0
+Verbraucher sollen flexibler auf den Strompreis reagieren können.,Keine Behauptung,0
+Dazu muss die Stromnutzung durch Smart Meter und Digitalisierung intelligenter werden.,Behauptung,1
+So erreichen wir eine bessere Lastverteilung.,Behauptung,1
+So sinken Verbrauch und Kosten .,Behauptung,1
+• Netzentgelte neu regeln.,Keine Behauptung,0
+Wir sprechen uns für die Beibehaltung einer Stromgebotszone und einen entschlossenen Netzausbau aus.,Keine Behauptung,0
+Statt unterschiedlicher Strompreiszonen muss der Strom für alle in Deutschland günstiger werden.,Behauptung,1
+Mit einer Reform der Netzentgelte sinkt die Belastung und steigt die Akzeptanz.,Behauptung,1
+"Eine zusätzliche Netzentgeltbelastung für industrielle Großverbraucher, die nicht flexibel produzieren können, lehnen wir ab.",Keine Behauptung,0
+Heizungsgesetz der Ampel zurücknehmen.,Keine Behauptung,0
+Die Menschen brauchen Entscheidungsfreiheit.,Behauptung,1
+"Sie wissen am besten, welche Heizungsart zu ihrem Wohneigentum und zu ihrem Geldbeutel passt.",Behauptung,1
+"Es geht uns darum, technologieoffen emissionsarme Wärmelösungen zu fördern und zu nutzen.",Keine Behauptung,0
+Dazu gehört für uns auch d as Heizen mit dem nachwachsenden Rohstoff Holz.,Keine Behauptung,0
+Das Heizungsgesetz der Ampel schaffen wir ab.,Keine Behauptung,0
+Verlässliche Dekarbonisierung im Gebäudebereich.,Keine Behauptung,0
+"Dabei setzen wir auf CO2 -Bepreisung mit sozialem Ausgleich, verlässliche Förderung und technologieoffene Lösungen.",Keine Behauptung,0
+So berücksichtigen wir unterschiedliche Gegebenheiten im Bestand.,Behauptung,1
+"Wir setzen auf Pioniermärkte, mit denen über Quoten für Grüngas im Gasnetz, Grün -Heizöl oder beispielsweise klimaneutralen Stahl ein effizienter Markthochlauf gelingen kann.",Keine Behauptung,0
+"So entscheidet nicht der Staat durch Förderung, wer am Markt teilnehmen darf.",Keine Behauptung,0
+Auf diesen neuen Märkten setzen sich die besten Anbieter durch.,Behauptung,1
+Unsere Energieforschung ist weltweit Spitze.,Behauptung,1
+Wir setzen auf Zukunftstechnologien „Made in Germany“.,Keine Behauptung,0
+"Wir starten eine Offensive für Energieinnovationen, die Wachstum und Wohlstand schafft und Vorbild für andere Länder ist.",Keine Behauptung,0
+• Energ etisch voran.,Keine Behauptung,0
+Für klimafreundliche Energie stellen wir eine technologieoffene Energieforschung sicher.,Keine Behauptung,0
+Forschungskooperationen bauen wir auch über die Energieunion hinaus aus.,Keine Behauptung,0
+"Das bedeutet für uns, breit zu forschen für die beste Form der Energieerzeugung: Brennstoffzelle, Kraftwerke mit klimaneutralen Gasen, Geothermie, Kern energie der vierten und fünften Generation, Small Modular Reactors und Fusionskraftwerke.",Keine Behauptung,0
+Gleiches gilt für die Forschung zu Transport und Speicherung.,Keine Behauptung,0
+Wasserstoff zum Erfolg führen.,Keine Behauptung,0
+Dazu schaffen wir Planungssicherheit und die notwendige Infrastruktur.,Keine Behauptung,0
+"Alle Wirtschaftsregionen müssen vom Wasserstoffkernnetz erreicht werden , es darf keine Benachteiligung einzelner Regionen geben .",Behauptung,1
+Wir brauchen auch eine große Portion Pragmatismus bei heimischer Erzeugung und internationalen Wasserstoffpartnerschaften.,Behauptung,1
+Der Wasserstoffhochlauf wird nur im europäischen Kontext erfolgreich sein.,Behauptung,1
+Ja zu marktwirtschaftlichem Klima und Umweltschutz,Keine Behauptung,0
+Unser Plan: Klimaziele einhalten.,Keine Behauptung,0
+Ressourcen nachhaltig nutzen.,Keine Behauptung,0
+Umwelt schutz gemeinsam machen .,Keine Behauptung,0
+"Die Ampel hat in drei Jahren mit ihrem ideologischen und planwirtschaftlichen Ansatz gezeigt, wie es nicht geht.",Behauptung,1
+Deutschland erlebt eine tiefgreifende De-Industrialisierung.,Behauptung,1
+Klimaschutz braucht eine starke Wirtschaft.,Behauptung,1
+Klimaschutz geht nur global und gemeinsam mit den Menschen.,Behauptung,1
+"Wir sehen uns in der Verantwortung, die Schöpfung zu bewahren.",Keine Behauptung,0
+Wir verstehen Nachhaltigkeit umfassend.,Keine Behauptung,0
+Pariser Klimaziele einhalten.,Keine Behauptung,0
+Die Klimaneutralität bis   haben wir fest im Blick .,Keine Behauptung,0
+"Die Erderwärmung ist ein globales Problem , das die Weltgemeinschaft nur gemeinsam lösen kann.",Behauptung,1
+Wir verbinden dieses Ziel unbedingt mit dem Erhalt der Wettbewerbsfähigkeit unserer Wirtschaft und der Notwendigkeit der sozialen Tragfähigkeit.,Keine Behauptung,0
+Nur so sichern wir die Akzeptanz bei den Menschen und die Chancen auf wirtschaftliches Wachstum .,Behauptung,1
+Verantwortung für die Welt übernehmen.,Keine Behauptung,0
+Wir unterstützen andere Länder beim Klimaschutz.,Keine Behauptung,0
+Dabei setzen wir auf Technologie und Wissenstransfer mit Innovationen „Made in Germany“.,Keine Behauptung,0
+Klimaschutz ganzheitlich denken.,Keine Behauptung,0
+Klimaschutz und Klimaanpassung sind zwei Seiten einer Medaille.,Behauptung,1
+In allen Bereichen unseres gesellschaftlichen Lebens müssen wir uns an die sich ändernden Bedingungen anpassen.,Behauptung,1
+Das gilt etwa für den Städtebau und den Gesundheitssektor.,Keine Behauptung,0
+Der nachhaltige Umgang mit dem Klimawandel ist stets im Einklang mit der Emissionsreduktion und einer Kohlenstoffkreislaufführung zu sehen.,Behauptung,1
+"Klimaanpassung ist Querschnittsaufgabe und tut gut daran, auf naturbasierte Lösungen zu setzen, die die Landschaft widerstandsfähiger und damit sicherer machen.",Behauptung,1
+Das ist auch im Hinblick auf Hochwasserschutz umzusetzen.,Behauptung,1
+Unsere Kommunen verantworten vielfach die Umsetzung der Maßnahmen für Klimaschutz und Klimaanpassung.,Behauptung,1
+"Für mehr Synergien stärken wir die Partnerschaft von Bund, Länder n und Kommunen und klären die langfristige Finanzierung.",Keine Behauptung,0
+"Richtig umgesetzt, ist er als marktwirtschaftliches Instrument in der Lage, die Emissionsmenge effizient zu begrenzen und das Klima bestmöglich zu schützen .",Behauptung,1
+Die CO2 -Bepreisung bauen wir im Instrumentenmix zum Leitinstrument aus und geben deren Einnahmen an Verbraucher und Wirtschaft zurück.,Keine Behauptung,0
+"Der Markt soll darüber entscheiden, wo und wie Emissionen vermieden werden.",Keine Behauptung,0
+"Das ist unser Weg: CO2 einsparen, wo es am effizientesten ist.",Keine Behauptung,0
+Emissionshandel international voranbringen.,Keine Behauptung,0
+Wir wollen ihn in der EU durch schrittweise Einbeziehung aller Sektoren mit ihren energiebedingten Emissionen als zentrales Klimainstrument stärken.,Keine Behauptung,0
+Globale Herausforderungen brauchen globale Partnerschaften.,Behauptung,1
+Auf dem Weg zu international vergleichbaren Standards setzen wir auf Kooperationen wie Klima und Energiepartnerschaften und den Schutz vor Verlagerungen von CO2 -Emissionen.,Keine Behauptung,0
+Kohlenstoffmärkte für den internationalen Handel von Emissionsminderungen unterstützen und nutzen wir.,Keine Behauptung,0
+• CO2 -Kreislaufwirtschaft etablieren.,Keine Behauptung,0
+Wir setzen auf eine umfassende CO2 -Kreislaufwirtschaft mit natürlicher und technischer CO2 -Nutzung und Speicherung.,Keine Behauptung,0
+"Wir schaffen die notwendigen Rahmenbedingungen, um Carbon Capture and Utilization (CCU) , Carbon Capture and Storage (CCS) und Direct Air Capture (DA CCS) sowie die erforderliche Transportinfrastruktur zu ermöglichen.",Keine Behauptung,0
+Investitionen in Klimatechnologien und Energieeffizienz sollen künftig steuerlich deutlich schneller und besser abgesetzt werden können.,Keine Behauptung,0
+"Um Verbraucher und Unternehmen schnell und effizient mit einem sozialen Ausgleich zu entlasten, schaffen wir einen Klimabonus .",Keine Behauptung,0
+Wir reduzieren mit den CO2 -Einnahmen zuerst die Stromsteuer und Netzentgelte.,Keine Behauptung,0
+Höhere Belastung en durch steigende CO2 -Abgaben m üssen auch zu höheren Entlastungen führen .,Behauptung,1
+Ressourcen nachhaltig nutzen,Keine Behauptung,0
+"Unser Auftrag ist, mit den uns gegebenen Ressourcen schonend und effizient umzugehen .",Keine Behauptung,0
+"Es geht um unsere wirtschaftliche Souveränität, Nachhaltigkeit und Generationengerechtigkeit , um unseren Lebensstil und Wohlstand.",Keine Behauptung,0
+Wir denken in Kreisläufen und reduzieren den Ressourcenverbrauch.,Keine Behauptung,0
+"Unsere Aufgabe ist es, Stoffkreisläufe zu schließen – bei Stoffen, aber auch bei Wasser, Wärme oder Kohlenstoff.",Keine Behauptung,0
+Gleichzeitig stärken wir die „Shared Economy“.,Keine Behauptung,0
+Technologie und materialoffen recyceln.,Keine Behauptung,0
+"Dazu bauen wir rechtliche Hemmnisse ab , setzen auf Modularität und innovatives Produktdesign und ermöglichen einen breiten Technologiemix.",Keine Behauptung,0
+"Umwelt schutz gemeinsam machen Umweltpolitik bedeutet für uns, Wasser, Boden und Luft in den Blick zu nehmen und unsere Biodiversität zu schützen.",Keine Behauptung,0
+"Der Erhalt der natürlichen Lebensgrundlagen, von Lebensräumen und Arten ist von zentraler Bedeutung.",Behauptung,1
+• Arten und Lebensräume erhalten.,Keine Behauptung,0
+Wir schützen bedrohte Arten und deren Lebensräume.,Keine Behauptung,0
+Hierfür werten wir Schutzgebiete qualitativ auf und stärken die Vernetzung der Lebensräume.,Keine Behauptung,0
+"Moderner Artenschutz erfordert eine regelmäßige Überprüfung der geltende n Schutzvorschriften, damit das Gleichgewicht der Arten gewahrt bleibt.",Behauptung,1
+• Moore schützen und wiedervernässen.,Keine Behauptung,0
+Moore sind unverzichtbare CO -Senken.,Behauptung,1
+Wir wollen den Schutz der Moore gemeinsam mit den Grundstückseigentümern intensivieren und Anreize für Wiedervernässungsprojekte geben .,Keine Behauptung,0
+"Wir erhalten Meere als widerstandsfähige Ökosysteme und ermöglichen eine integrierte, naturverträgliche Nutzung für Transport, Energie und Militär.",Keine Behauptung,0
+Gleiches gilt für das Fangen von Fischen und Meeresfrüchten .,Keine Behauptung,0
+"Wir machen uns dafür stark, dass die Meeresschutzabkommen weiterentwickelt werden.",Keine Behauptung,0
+Ein besonderes Anliegen ist uns der Kampf gegen die Verschmutzung der Meere sowie gegen Munitionsaltlasten in der Nord und Ostsee.,Keine Behauptung,0
+Hochwasser und Küstenschutz schützt Leben.,Behauptung,1
+"Um die Menschen in gefährdeten Regionen zu schützen, hat für uns der Küsten und Hochwasserschutz Priorität .",Keine Behauptung,0
+Wir wollen weg von der Ausgleichspflicht für Maßnahmen des Küsten und Hochwasserschutzes.,Keine Behauptung,0
+Extremwetter -Ereignisse nehmen in Deutschland stark zu.,Behauptung,1
+Eine flächendeckende Pflichtversicherung für Elementarschäden ist die richtige finanzielle Schadensvorsorge.,Behauptung,1
+Wir werden sie deshalb einführen und so die Lasten im Sinne der Steuerzahler gerecht verteilen.,Keine Behauptung,0
+"Wir unterstützen Land und Forstwirte, Waldbesitzer, Jäger und Fischer dabei, die Ökosysteme und ihre Leistungen zu erhalten.",Keine Behauptung,0
+"Ein Ansatz ist der Naturschutz auf Zeit, der im Einklang mit allen Nutzergruppen aufgesetzt wird.",Behauptung,1
+Dafür erhöhen wir das Bewusstsein und sorgen mit den Ländern und Kommunen für einen guten ökologischen Zustand unserer Gewässer.,Keine Behauptung,0
+"Unsere hochwertigen und wertvollen Trink -, Mineral -, Heil und Grundwasservorkommen schützen wir besonders.",Keine Behauptung,0
+"Unser Augenmerk gilt dabei besonders Regionen, die zunehmend von Trockenheit betroffen sind.",Keine Behauptung,0
+Für eine sichere Verund Entsorgung nutzen wir auch digitale Lösungen.,Keine Behauptung,0
+Zur Reinhaltung unserer Gewässer setzen wir auf das Verursacherprinzip.,Keine Behauptung,0
+Wir nutzen Flächen an Land und Gewässer nachhaltig.,Keine Behauptung,0
+"Dazu reduzieren wir die Flächenversiegelung, unterstützen die kluge Flächennutzung durch Doppel und Mehrfachnutzungen und verbessern die Ausgleichsmaßnahmen.",Keine Behauptung,0
+Hier braucht es innovative Ansätze.,Behauptung,1
+Perund polyfluorierte Chemikalien (PFAS) nicht grundsätzlich verbieten.,Keine Behauptung,0
+Wir schützen Gesundheit und Umwelt und sichern zudem die Verfügbarkeit notwendiger Chemikalien.,Keine Behauptung,0
+Dafür verfolgen wir einen risikobasierten Ansatz.,Keine Behauptung,0
+"Pauschalverbote von aktuell nicht austauschbaren Stoffen, die für unsere Gesundheit, unsere Daseinsvorsorge u nd auch für unser Wirtschaften elementar sind, lehnen wir ab.",Keine Behauptung,0
+Wir investieren stattdessen in die Forschung für Ersatzstoffe und geschlossene Kreisläufe .,Keine Behauptung,0
+"Umweltverschmutzung , illegaler Tierhandel, illegale Tötung und Qual von Tieren sind Straftaten, die genauso konsequent bestraft werden müssen .",Behauptung,1
+Die Regeln für den Handel mit internationalen Umwelt und Klimazertifikaten entwickeln wir weiter.,Keine Behauptung,0
+Den Prozess der Endlagersuche beschleunigen wir durch Anpassungen und schließen geologisch ungeeignete Regionen schneller aus.,Keine Behauptung,0
+"Ja zu Forschung, Innovationen und neue n Technologie n",Keine Behauptung,0
+Unser Plan: Mit Innovationen und Technologie n durchstarten.,Keine Behauptung,0
+Potenziale der Digitalisierung und Künstlichen Intelligenz heben.,Keine Behauptung,0
+Mit Innovationen und Technologien durchstarten,Keine Behauptung,0
+"Die öffentliche Debatte kreist oft um die Frage, wie wir in Deutschland leben wollen.",Keine Behauptung,0
+"Wir müssen aber vor allem die Frage beantworten, wovon wir künftig leben wollen.",Keine Behauptung,0
+Wir brauchen eine Hightech -Agenda für Deutschland.,Keine Behauptung,0
+"Denn Investitionen in Forschung, Innov ationen , Technologien und Transfer (FIT T) sind der Schlüssel zu einer wettbewerbsfähigen Wirtschaft mit gut bezahlten Arbeitsplätzen.",Behauptung,1
