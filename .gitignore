@@ -3,7 +3,7 @@ logs
 data
 claim_classifier
 results
-saved_on_hardrive
+saved_on_harddrive
 *.ipynb
 __pycache__/
 *.pyc
