@@ -1,6 +1,6 @@
 from decision_helper_lib import *
 from api_communication_workflow import *
-
+from finetune_bert_for_classi import *
 import os
 
 
@@ -31,6 +31,8 @@ if __name__ == "__main__":
         # Save full preprocessed data dict
         write_to_json(json_path_full_data_dict, full_data_dict)
 
+        print(full_data_dict.keys()) # TEST
+
         return full_data_dict
 
     bool_read_from_file = True # Adjust this to False if you want to re-read the data
@@ -38,6 +40,7 @@ if __name__ == "__main__":
         full_data_dict = read_from_json(json_path_full_data_dict)
     else:
         full_data_dict = new_read()
+    print("Data read successfully!")
 
     # Initialize the full results dict
     full_results_dict = {}
@@ -48,20 +51,23 @@ if __name__ == "__main__":
         for key, value in full_data_dict.items():
             lemma_freq_top_dict = calculate_lemma_frequencies(value)
             full_results_dict[key] = lemma_freq_top_dict
+        print("Lemma frequencies analyzed successfully!")
 
         # Analyze german sentiments
         for key, value in full_data_dict.items():
             results, sentiment_percentages = analyze_german_sentiments(value["sentences"])
             full_results_dict[key]["sentiments"] = sentiment_percentages
+        print("Sentiments analyzed successfully!")
 
         # Extract claims
         try:
             for key, value in full_data_dict.items():
-                extracted_claims = extract_claims(value["sentences"])
+                # extracted_claims = extract_claims(value["sentences"]) # using API
+                extracted_claims = extract_claims_using_finetuned_bert(value["sentences"]) # using local finetuned model
                 full_results_dict[key]["extracted_claims"] = extracted_claims
         except Exception as e:
             print(f"Error extracting claims: {e}")
-
+        print("Claims extracted successfully!")
         write_to_json(json_path_full_results_dict, full_results_dict)
 
         return full_results_dict
@@ -72,32 +78,59 @@ if __name__ == "__main__":
     else:
         full_results_dict = new_analyze()
 
+    print("Data analyzed successfully!")
+
+    # look https://www.textrazor.com/demo if i have time some day
+
+
     json_path_FINAL_results_dict = os.path.join(JSON_BASE_PATH, "final_results_dict.json")
+
+    json_path_sicherheitskopie = os.path.join(JSON_BASE_PATH, "sicherheitskopie.json")
+
     FINAL_results_dict = {}
     # Fact-checking
     def new_fact_checking():
         for key, value in full_results_dict.items():
+
+
+
+            ###### JUST FOR TESTING PHASE ######
+            if key in ("GRUENE_ENTWURF", "SPD"):
+                continue
+            ###### JUST FOR TESTING ######
+
+
+
             claims_list = value.get("extracted_claims", [])
-            claim_classification_list = fact_checking(claims_list)
+            claim_classification_list = fact_checking_zyla_RAW(claims_list)
 
             full_results_dict[key]["fact_checks"] = claim_classification_list
 
-            full_results_dict[key]["fact_checks_percentage"] = calculate_classification_percentages(claim_classification_list)
+            fact_checks_only = {
+                    key: {"fact_checks": full_results_dict[key]["fact_checks"]}
+                    for key in full_results_dict
+                }
+            # make safety copy
+            write_to_json(json_path_sicherheitskopie, fact_checks_only)
+            try:
+                full_results_dict[key]["fact_checks_percentage"] = calculate_classification_percentages(claim_classification_list)
 
-            ## Build the final results dict ##
-            # List of fields to copy
-            fields_to_copy = ["lemmas_top_overall", "lemmas_top_per_category", "sentiments", "fact_checks_percentage"]
+                ## Build the final results dict ##
+                # List of fields to copy
+                fields_to_copy = ["lemmas_top_overall", "lemmas_top_per_category", "sentiments", "fact_checks_percentage"]
 
-            for key in full_results_dict.keys():
-                if key not in FINAL_results_dict:
-                    FINAL_results_dict[key] = {}
-                for field in fields_to_copy:
-                    # Copy with default value as None if field is missing
-                    FINAL_results_dict[key][field] = full_results_dict[key].get(field, None)
+                for key in full_results_dict.keys():
+                    if key not in FINAL_results_dict:
+                        FINAL_results_dict[key] = {}
+                    for field in fields_to_copy:
+                        # Copy with default value as None if field is missing
+                        FINAL_results_dict[key][field] = full_results_dict[key].get(field, None)
+            except:
+                pass
 
 
         write_to_json(json_path_full_results_dict, full_results_dict)
-        write_to_json(json_path_FINAL_results_dict, FINAL_results_dict)
+        # write_to_json(json_path_FINAL_results_dict, FINAL_results_dict)
 
     bool_read_from_file_fact_checking = False # Adjust this to False if you want to re-read the data
     if os.path.exists(json_path_full_results_dict) and bool_read_from_file_fact_checking:

@@ -97,7 +97,7 @@ def preprocess_text(text: str, nlp) -> dict:
         doc = nlp(sentence)
 
         # Check if the sentence has 3 or more words (tokens)
-        if len([token.text for token in doc if not token.is_stop and not token.is_punct]) >= 3:
+        if len([token.text for token in doc if not token.is_stop]) >= 3:
             processed_sentences.append(sentence)
 
     return {
@@ -598,11 +598,4 @@ def calculate_classification_percentages(data):
 
 
 if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
-
-    # Beispielaufruf der Funktion
-    sätze = ["Die Erde ist flach.", "Der Klimawandel wird durch menschliche Aktivitäten verursacht."]
-    facticity_API_key = os.getenv("FACT_API_KEY")
-    #print(fact_checking(sätze, facticity_API_key))
+    print(calculate_classification_percentages([('Klimawandel verursacht durch menschliche Aktivitäten', True), ('Situation in Deutschland', False)]))

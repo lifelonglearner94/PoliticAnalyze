@@ -1,6 +1,7 @@
 from Facticity_api import FacticityAPI
 from dotenv import load_dotenv
 import os
+from zyla_api import zyla_check_fact_api, dummy_zyla_check_fact_api
 
 def extract_claims(list_of_sentences, batch_size=20):
     """
@@ -38,7 +39,7 @@ def extract_claims(list_of_sentences, batch_size=20):
     return extracted_claims
 
 
-def fact_checking(claims_list):
+def fact_checking_facticity(claims_list):
     """
     Performs fact-checking on a list of claims using the Facticity API.
 
@@ -77,13 +78,115 @@ def fact_checking(claims_list):
     return claim_classification_list
 
 
+def fact_checking_zyla(claims_list):
+    """
+    Performs fact-checking on a list of claims using the Zyla Labs API.
 
+    Args:
+    claims_list (list): A list of claims to be fact-checked.
+
+    Returns:
+    list: A list of tuples, where each tuple contains (claim, classification).
+            Classification will be the API result or "Error" if processing failed.
+    """
+    from itertools import zip_longest
+    from dotenv import load_dotenv
+    import os
+
+    load_dotenv()
+    api_key = os.getenv("ZYLA_API_KEY")
+
+    # Initialize the list to store claim-classification pairs
+    claim_classification_list = []
+
+    # Helper function to group claims into chunks of three
+    def group_claims(iterable, n, fillvalue=""):
+        args = [iter(iterable)] * n
+        return zip_longest(*args, fillvalue=fillvalue)
+
+    # Group claims into chunks of 3
+    grouped_claims = group_claims(claims_list, 3)
+
+    for idx, group in enumerate(grouped_claims):
+        # Join up to 3 claims with spaces
+        concatenated_claims = " ".join(filter(None, group))  # Filter to remove empty strings
+
+        try:
+            # Fact-check the concatenated claims using the API
+            result = zyla_check_fact_api(concatenated_claims, api_key)
+            #result = dummy_zyla_check_fact_api(concatenated_claims, api_key)
+
+            list_of_current_claim_classi_pairs = list(result["fact_check"].items())
+
+            # Append the claim and its classification as a tuple to the list
+            claim_classification_list.extend(list_of_current_claim_classi_pairs)
+            print(idx*3, "Successfully fact-checked claims:", list_of_current_claim_classi_pairs)
+        except Exception as e:
+            print(f"Error processing claims: {e}")
+            print(result)
+
+    return claim_classification_list
+
+
+def fact_checking_zyla_RAW(claims_list):
+    """
+    Performs fact-checking on a list of claims using the Zyla Labs API.
+
+    Args:
+    claims_list (list): A list of claims to be fact-checked.
+
+    Returns:
+    list: A list of tuples, where each tuple contains (claim, classification).
+            Classification will be the API result or "Error" if processing failed.
+    """
+    from itertools import zip_longest
+    from dotenv import load_dotenv
+    import os
+
+    load_dotenv()
+    api_key = os.getenv("ZYLA_API_KEY")
+
+    # Initialize the list to store claim-classification pairs
+    claim_classification_list = []
+
+    # Helper function to group claims into chunks of three
+    def group_claims(iterable, n, fillvalue=""):
+        args = [iter(iterable)] * n
+        return zip_longest(*args, fillvalue=fillvalue)
+
+    # Group claims into chunks of 3
+    grouped_claims = group_claims(claims_list, 3)
+
+    for idx, group in enumerate(grouped_claims):
+        # Join up to 3 claims with spaces
+        concatenated_claims = " ".join(filter(None, group))  # Filter to remove empty strings
+
+        try:
+            # Fact-check the concatenated claims using the API
+            result = zyla_check_fact_api(concatenated_claims, api_key)
+
+            # Append the claim and its classification as a tuple to the list
+            claim_classification_list.append((concatenated_claims, result))
+
+
+            print(idx*3, "Successfully fact-checked claims:", result)
+
+        except Exception as e:
+            print(f"Error processing claims: {e}")
+            print(result)
+
+    return claim_classification_list
 
 if __name__ == "__main__":
-    claims_list = [
-        "Die Grünen setzen sich für den Umweltschutz ein."
-    ]
+    from decision_helper_lib import read_from_json#, translate_sentences
+    import os
+    JSON_BASE_PATH = "saved_on_harddrive"
+    json_path_full_results_dict = os.path.join(JSON_BASE_PATH, "full_results_dict.json")
 
-    # Perform fact-checking on the list of claims
-    claim_classification_list = fact_checking(claims_list)
-    print("Fact-Check Result:", claim_classification_list)
+    full_results_dict = read_from_json(json_path_full_results_dict)
+
+    for key, value in full_results_dict.items():
+        claims_list = value.get("extracted_claims", [])
+        claim_classification_list = fact_checking_zyla(claims_list)
+        break
+    print(claim_classification_list)

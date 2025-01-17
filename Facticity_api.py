@@ -80,8 +80,8 @@ if __name__ == "__main__":
     # base_folder = "saved_on_harddrive"
 
     # # Fact-check example
-    result = facticity.fact_check(query="Die AfD ist eine demokratische Partei.")
-    print("Fact-Check Result:", result)
+    # result = facticity.fact_check(query="Die AfD ist eine demokratische Partei.")
+    # print("Fact-Check Result:", result)
 
 #     data = {
 #     "name": "Max Mustermann",
@@ -94,8 +94,8 @@ if __name__ == "__main__":
 #     write_to_json(json_path, data)
 
     ######### Claim extraction example
-    # claims = facticity.extract_claim(text="Arbeits- und Fachkräfte gewinnen Der Arbeits- und Fachkräftemangel bremst unsere wirtschaftliche Entwicklung. Aus demo- grafischen Gründen verschärft er sich weiter und wird zu einem echten Standortrisiko. Ei- gentlich könnten die Unternehmen mehr produzieren, doch dafür fehlt das Personal. Mit einer Fachkräfteoffensive bekämpfen wir das Problem und sorgen für mehr Produktivität. Für ausländische Fachkräfte wollen wir ein attraktiver Standort sein und lebenswerte Hei- mat werden. • Hürden aus dem Weg räumen. Vor allem Frauen in Teilzeit sind eine Gruppe mit großem Potenzial für den Arbeitsmarkt. Es braucht bessere Rahmenbedingungen für Vollzeitar- beit oder vollzeitnahe Arbeit. • Haushaltsnahe Dienstleistungen stärken. Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen. • Berufsabschluss nachholen. Menschen in Helfertätigkeiten fördern wir auf ihrem Weg zu einer qualifizierten Fachkraft und entwickeln Anreize zum Erwerb beruflicher Qualifikationen.")
-    # print(claims)
+    claims = facticity.extract_claim(text="Arbeits- und Fachkräfte gewinnen Der Arbeits- und Fachkräftemangel bremst unsere wirtschaftliche Entwicklung. Aus demo- grafischen Gründen verschärft er sich weiter und wird zu einem echten Standortrisiko. Ei- gentlich könnten die Unternehmen mehr produzieren, doch dafür fehlt das Personal. Mit einer Fachkräfteoffensive bekämpfen wir das Problem und sorgen für mehr Produktivität. Für ausländische Fachkräfte wollen wir ein attraktiver Standort sein und lebenswerte Hei- mat werden. • Hürden aus dem Weg räumen. Vor allem Frauen in Teilzeit sind eine Gruppe mit großem Potenzial für den Arbeitsmarkt. Es braucht bessere Rahmenbedingungen für Vollzeitar- beit oder vollzeitnahe Arbeit. • Haushaltsnahe Dienstleistungen stärken. Wir verbessern die steuerliche Absetzbarkeit haushaltsnaher Dienstleistungen. • Berufsabschluss nachholen. Menschen in Helfertätigkeiten fördern wir auf ihrem Weg zu einer qualifizierten Fachkraft und entwickeln Anreize zum Erwerb beruflicher Qualifikationen.")
+    print(claims)
     ## Save the extracted claims to a JSON file
     # write_list_to_json(json_path, claims["claims"])
 

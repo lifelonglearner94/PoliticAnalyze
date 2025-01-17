@@ -116,8 +116,7 @@ class ClaimClassifierTrainer:
         self.trainer.save_model(model_dir)
         self.tokenizer.save_pretrained(model_dir)
 
-    @staticmethod
-    def load_for_inference(model_dir="./claim_classifier"):
+    def load_for_inference(self, model_dir="./claim_classifier"):
         """
         Loads a model and tokenizer for inference.
         Args:
@@ -125,9 +124,9 @@ class ClaimClassifierTrainer:
         Returns:
             model, tokenizer: Loaded model and tokenizer.
         """
-        model = BertForSequenceClassification.from_pretrained(model_dir)
-        tokenizer = AutoTokenizer.from_pretrained(model_dir)
-        return model, tokenizer
+        self.model = BertForSequenceClassification.from_pretrained(model_dir)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_dir)
+
 
     @staticmethod
     def pipeline_inference(model_dir="./claim_classifier"):
@@ -141,41 +140,70 @@ class ClaimClassifierTrainer:
         return pipeline("text-classification", model=model_dir)
 
 
-import pandas as pd
+def extract_claims_using_finetuned_bert(data_to_predict_on, batch_size = 5):
+    # Initialize the trainer and load it for inference
+    trainer = ClaimClassifierTrainer()
+    trainer.load_for_inference()
+
+    # Function to process data in batches
+    def batch_predict(data, batch_size):
+        predictions = []
+        for i in range(0, len(data), batch_size):
+            print("Processing batch", i // batch_size + 1, "of ", len(data) // batch_size + 1)
+            batch = data[i:i + batch_size]
+            batch_predictions = trainer.predict(new_data=batch)
+            predictions.extend(batch_predictions)
+        return predictions
+
+    # Perform batch prediction
+    predictions = batch_predict(data_to_predict_on, batch_size)
+
+    # Filter sentences classified as 1
+    extracted_claims = [sentence for sentence, prediction in zip(data_to_predict_on, predictions) if prediction == 1]
+
+    return extracted_claims
+
 
 if __name__ == "__main__":
-    # Load the dataset
-    first_test_df = pd.read_csv("labeled_sentences_first_621.csv")
-    first_test_df_subset = first_test_df[['sentence', 'label_numeric']]
-    first_test_df_subset_renamed = first_test_df_subset.rename(columns={'sentence': 'text', 'label_numeric': 'label'})
-    first_test_df_subset_as_dict = first_test_df_subset_renamed.to_dict(orient="list")
+    import pandas as pd
+    # # Load the dataset
+    # first_test_df = pd.read_csv("labeled_sentences_first_621.csv")
+    # first_test_df_subset = first_test_df[['sentence', 'label_numeric']]
+    # first_test_df_subset_renamed = first_test_df_subset.rename(columns={'sentence': 'text', 'label_numeric': 'label'})
+    # first_test_df_subset_as_dict = first_test_df_subset_renamed.to_dict(orient="list")
+
+    # # Initialize the trainer
+    # trainer = ClaimClassifierTrainer()
+
+    # # Prepare the dataset
+    # trainer.prepare_dataset(first_test_df_subset_as_dict)
+
+    # # Set up model and trainer
+    # trainer.set_up_model_and_trainer()
+
+    # # Train the model
+    # trainer.train()
+
+    # # Evaluate the model
+    # metrics = trainer.evaluate()
+    # print("Evaluation metrics:", metrics)
+
+    # # Predict on the test set
+    # predictions = trainer.predict()
+    # print("Predictions:", predictions)
+
+
+    # # Save the model
+    # trainer.save_model()
+    # exit()
+
+    # # Inference using the pipeline
+    # text_pipeline = ClaimClassifierTrainer.pipeline_inference(model_dir="./claim_classifier")
+    # result = text_pipeline("Das ist eine Behauptung.")
+    # print("Pipeline prediction:", result)
 
     # Initialize the trainer
     trainer = ClaimClassifierTrainer()
-
-    # Prepare the dataset
-    trainer.prepare_dataset(first_test_df_subset_as_dict)
-
-    # Set up model and trainer
-    trainer.set_up_model_and_trainer()
-
-    # Train the model
-    trainer.train()
-
-    # Evaluate the model
-    metrics = trainer.evaluate()
-    print("Evaluation metrics:", metrics)
-
-    # Predict on the test set
-    predictions = trainer.predict()
+    trainer.load_for_inference()
+    predictions = trainer.predict(new_data=["Das ist eine Behauptung.", "Die Erde ist flach.", "Der Klimawandel wird durch menschliche Aktivitäten verursacht.", "Hallo, zusammen, wie geht es euch?"])
     print("Predictions:", predictions)
-
-
-    # Save the model
-    trainer.save_model()
-    exit()
-
-    # Inference using the pipeline
-    text_pipeline = ClaimClassifierTrainer.pipeline_inference(model_dir="./claim_classifier")
-    result = text_pipeline("Das ist eine Behauptung.")
-    print("Pipeline prediction:", result)
