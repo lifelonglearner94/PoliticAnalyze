@@ -92,15 +92,6 @@ if __name__ == "__main__":
     def new_fact_checking():
         for key, value in full_results_dict.items():
 
-
-
-            ###### JUST FOR TESTING PHASE ######
-            if key in ("GRUENE_ENTWURF", "SPD"):
-                continue
-            ###### JUST FOR TESTING ######
-
-
-
             claims_list = value.get("extracted_claims", [])
             claim_classification_list = fact_checking_zyla_RAW(claims_list)
 
@@ -112,28 +103,30 @@ if __name__ == "__main__":
                 }
             # make safety copy
             write_to_json(json_path_sicherheitskopie, fact_checks_only)
-            try:
-                full_results_dict[key]["fact_checks_percentage"] = calculate_classification_percentages(claim_classification_list)
-
-                ## Build the final results dict ##
-                # List of fields to copy
-                fields_to_copy = ["lemmas_top_overall", "lemmas_top_per_category", "sentiments", "fact_checks_percentage"]
-
-                for key in full_results_dict.keys():
-                    if key not in FINAL_results_dict:
-                        FINAL_results_dict[key] = {}
-                    for field in fields_to_copy:
-                        # Copy with default value as None if field is missing
-                        FINAL_results_dict[key][field] = full_results_dict[key].get(field, None)
-            except:
-                pass
-
-
         write_to_json(json_path_full_results_dict, full_results_dict)
         # write_to_json(json_path_FINAL_results_dict, FINAL_results_dict)
 
-    bool_read_from_file_fact_checking = False # Adjust this to False if you want to re-read the data
+    bool_read_from_file_fact_checking = True # Adjust this to False if you want to re-read the data
     if os.path.exists(json_path_full_results_dict) and bool_read_from_file_fact_checking:
         full_results_dict = read_from_json(json_path_full_results_dict)
     else:
         new_fact_checking()
+
+    print("Building final results")
+    # Build final results
+    for key in full_results_dict.keys():
+        fact_checks_data = full_results_dict[key]["fact_checks"]
+        full_results_dict[key]["fact_checks_percentage"] = calculate_classification_percentages_zyla_output(fact_checks_data)
+
+    ## Build the final results dict ##
+    # List of fields to copy
+    fields_to_copy = ["lemmas_top_overall", "lemmas_top_per_category", "sentiments", "fact_checks_percentage"]
+
+    for key in full_results_dict.keys():
+        if key not in FINAL_results_dict:
+            FINAL_results_dict[key] = {}
+        for field in fields_to_copy:
+            # Copy with default value as None if field is missing
+            FINAL_results_dict[key][field] = full_results_dict[key].get(field, None)
+
+    write_to_json(json_path_FINAL_results_dict, FINAL_results_dict)

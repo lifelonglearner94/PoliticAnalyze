@@ -573,7 +573,7 @@ def read_from_json(file_path):
         return None
 
 
-def calculate_classification_percentages(data):
+def calculate_classification_percentages_facticity_output(data):
     """
     Calculate the percentage of each classification in the given data.
 
@@ -597,5 +597,40 @@ def calculate_classification_percentages(data):
     return percentages
 
 
+def calculate_classification_percentages_zyla_output(fact_checks_data):
+    def count_occurrences_in_structure(data, search_string):
+        """
+        Recursively traverses a nested structure of lists, dictionaries, and other values,
+        counting the occurrences of the specified search string.
+
+        :param data: The input structure (list, dict, str, etc.)
+        :param search_string: The string to search for and count occurrences of.
+        :return: The count of occurrences of the search string.
+        """
+        if data == search_string:
+            return 1
+
+        if isinstance(data, dict):
+            # Recursively count in each value of the dictionary
+            return sum(count_occurrences_in_structure(value, search_string) for value in data.values())
+
+        if isinstance(data, list):
+            # Recursively count in each element of the list
+            return sum(count_occurrences_in_structure(item, search_string) for item in data)
+
+        return 0
+
+    true_count = count_occurrences_in_structure(fact_checks_data, "True")
+    false_count = count_occurrences_in_structure(fact_checks_data, "False")
+    partially_true_count = count_occurrences_in_structure(fact_checks_data, "Partially true")
+
+    all_verifiable_facts = true_count + false_count + partially_true_count
+
+    percentages_dict = {"True": true_count / all_verifiable_facts * 100,
+                        "Partially true": partially_true_count / all_verifiable_facts * 100,
+                        "False": false_count / all_verifiable_facts * 100}
+    return percentages_dict
+
 if __name__ == "__main__":
-    print(calculate_classification_percentages([('Klimawandel verursacht durch menschliche Aktivitäten', True), ('Situation in Deutschland', False)]))
+    # print(calculate_classification_percentages_facticity_output([('Klimawandel verursacht durch menschliche Aktivitäten', True), ('Situation in Deutschland', False)]))
+    pass
