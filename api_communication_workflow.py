@@ -179,7 +179,8 @@ def fact_checking_zyla_RAW(claims_list):
 
 if __name__ == "__main__":
     from decision_helper_lib import read_from_json#, translate_sentences
-    import os
+    # TESTING
+
     JSON_BASE_PATH = "saved_on_harddrive"
     json_path_full_results_dict = os.path.join(JSON_BASE_PATH, "full_results_dict.json")
 

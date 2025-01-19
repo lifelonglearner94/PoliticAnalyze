@@ -1,8 +1,3 @@
-# https://zylalabs.com/api-marketplace/tools/fact+checking+api/2753
-# 7 days free trial
-
-# https://www.factiverse.ai/products
-# könnte nicht geeignet sein für mein Projekt, weil sieht eher aus wie fertige software
 import requests
 import json
 from time import sleep
@@ -17,6 +12,7 @@ def claim_buster_check_fact(input_claim, api_key):
 
     return api_response.json()
 
+
 def claim_buster_claim_spotter(input_text, api_key):
 
     # Define the endpoint (url) with the claim formatted as part of it, api-key (api-key is sent as an extra header)
@@ -27,6 +23,7 @@ def claim_buster_claim_spotter(input_text, api_key):
     api_response = requests.get(url=api_endpoint, headers=request_headers)
 
     return api_response.json()
+
 
 def zyla_check_fact_api(user_content, api_key, max_retries=3, retry_delay=5):
     """
@@ -96,7 +93,7 @@ if __name__ == "__main__":
     import json
 
     load_dotenv()
-    #claim_buster_api_key = os.getenv("CLAIM_BUSTER_API_KEY")
+
     zyla_api_key = os.getenv("ZYLA_API_KEY")
 
     print(zyla_check_fact_api("Der Klimawandel wird durch menschliche Aktivitäten verursacht. Deutschland geht den Bach herunter.", zyla_api_key))

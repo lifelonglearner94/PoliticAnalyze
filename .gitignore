@@ -7,3 +7,4 @@ saved_on_harddrive
 *.ipynb
 __pycache__
 *.pyc
+unused_functions.py

@@ -1,5 +1,3 @@
-# TODO s
-
 import json
 import os
 import spacy
@@ -24,10 +22,6 @@ def read_pdf(file_path):
             page = pdf.pages[page_num]
             text += page.extract_text()
     return text
-
-
-
-
 
 
 def create_german_nlp_pipeline():
@@ -107,12 +101,6 @@ def preprocess_text(text: str, nlp) -> dict:
     }
 
 
-
-
-
-
-from collections import Counter, defaultdict
-
 def calculate_lemma_frequencies(data, top_n_overall=5, top_n_per_category=10):
     """
     Calculate lemma frequencies overall and per POS category.
@@ -161,27 +149,6 @@ def calculate_lemma_frequencies(data, top_n_overall=5, top_n_per_category=10):
         'lemmas_top_overall': dict(top_overall),
         'lemmas_top_per_category': {pos: dict(top) for pos, top in top_per_category.items()},
     }
-
-
-from pprint import pprint
-
-def pretty_print_frequencies(result, top_n_overall=20, top_n_per_category=15):
-    # Print the top N most frequent lemmas overall
-    print("Top {} most frequent lemmas overall:".format(top_n_overall))
-    overall_freq = result['lemma_frequencies']
-    sorted_overall = sorted(overall_freq.items(), key=lambda x: x[1], reverse=True)[:top_n_overall]
-    pprint(sorted_overall)
-    print("\n")
-
-    # Print the top N most frequent lemmas for each POS category
-    pos_freq = result['pos_frequencies']
-    for pos, lemma_counts in pos_freq.items():
-        print("Top {} most frequent {} lemmas:".format(top_n_per_category, pos))
-        sorted_pos = sorted(lemma_counts.items(), key=lambda x: x[1], reverse=True)[:top_n_per_category]
-        pprint(sorted_pos)
-        print("\n")
-
-
 
 
 def analyze_german_sentiments(sentences_list):
@@ -241,8 +208,6 @@ def analyze_german_sentiments(sentences_list):
     #     print(f"{sentiment}: {percentage:.2f}%")
 
     return results, sentiment_percentages
-
-
 
 
 def most_common_topics(sentences_list, german_stopwords, num_clusters=None, min_sentences_per_cluster=3):
@@ -435,8 +400,6 @@ def most_common_topics_with_summ(sentences_list, german_stopwords, num_clusters=
         raise Exception(f"Error during topic extraction: {e}")
 
 
-
-
 def translate_sentences(sentences_list, target_language="en"):
     from easynmt import EasyNMT
     model = EasyNMT('opus-mt')
@@ -447,98 +410,6 @@ def translate_sentences(sentences_list, target_language="en"):
         translated_sentences.append(translation)
 
     return translated_sentences
-
-from openai import OpenAI
-import time
-
-def classify_statements_as_claim(sentences, openrouter_api_key, batch_size=10):
-    """
-    Klassifiziert eine Liste von Sätzen als Behauptung oder keine Behauptung mithilfe der LLM API.
-
-    Args:
-        sentences (list of str): Die Liste der zu klassifizierenden Sätze.
-        openrouter_api_key (str): Der API-Schlüssel für OpenRouter.
-        batch_size (int): Die Anzahl der Sätze, die pro Anfrage gesendet werden sollen.
-
-    Returns:
-        dict: Ein Dictionary mit den Sätzen als Schlüssel und ihren Klassifikationen als Werte.
-    """
-    client = OpenAI(
-        base_url="https://openrouter.ai/api/v1",
-        api_key=openrouter_api_key,
-    )
-
-    results = {}
-    for i in range(0, len(sentences), batch_size):
-        print(f"Processing batch {i // batch_size + 1}...")
-        batch = sentences[i:i + batch_size]
-        # Formulieren Sie den Prompt für die aktuelle Batch.
-        prompt_2 = (
-            "Classify the following statements. Return each sentence followed by a \"#\" and the classification \"Claim\" or \"No Claim\". " +
-            "Definition of \"Claim\": " +
-            "An claim is a statement in sentence form that presents a fact or situation as given or true. " +
-            "At the same time, it implies that the speaker is convinced of the truth of this fact. " +
-            "Definition of \"Not a Claim\": " +
-            "A statement that is not an claim includes, for example: " +
-            "- A question " +
-            "- An expression of opinion without a clear statement of fact " +
-            "- A condition (e.g., if-then sentences) " +
-            "- An exclamation or a command " +
-            "Examples to distinguish: " +
-            "1. Claim: " +
-            "- \"The Earth is a sphere.\" " +
-            "- \"Climate change is caused by human activity.\" " +
-            "2. Not a Claim: " +
-            "- \"Is the Earth a sphere?\" " +
-            "- \"I think it’s cold today.\" " +
-            "- \"If it rains tomorrow, we’ll stay home.\" " +
-            "- \"Look out the window!\" " +
-            "Statements to classify: " +
-            '\n'.join([f'{i + idx + 1}. {sentence}' for idx, sentence in enumerate(batch)]) + '\n\n' +
-            "Output format: " +
-            "Return the output in the following format: \"Sentence # Classification\". No other text or whitespaces!"
-        )
-
-
-        try:
-            # Anfrage an die API
-            completion = client.chat.completions.create(
-                extra_headers={
-                    "HTTP-Referer": "<YOUR_SITE_URL>",
-                    "X-Title": "<YOUR_SITE_NAME>",
-                },
-                model="google/gemma-2-9b-it:free",
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt_2,
-                    }
-                ]
-            )
-            # API-Antwort verarbeiten
-            response = completion.choices[0].message.content.strip().split("\n")
-
-            # Antwort korrekt zuordnen
-            current_classifications = []
-            for line in response:
-                if "#" in line:
-                    sentence, classification = map(str.strip, line.split("#", 1))
-                    # cleaned_sentence = sentence.lstrip("1234567890. ").strip()
-                    current_classifications.append(classification)
-                else:
-                    print(f"Fehlerhafte Zeile: {line}")  # Debugging
-            for idx, sentence in enumerate(batch):
-                results[sentence] = current_classifications[idx]
-
-        except Exception as e:
-            print(f"Fehler bei der Verarbeitung der Batch {i // batch_size + 1}: {e}")
-            for sentence in batch:
-                results[sentence] = "Fehler"
-
-        # Optional: Zeitverzögerung, um API-Rate-Limits zu vermeiden
-        time.sleep(1)
-
-    return results
 
 
 def write_to_json(file_path, data):
@@ -632,5 +503,4 @@ def calculate_classification_percentages_zyla_output(fact_checks_data):
     return percentages_dict
 
 if __name__ == "__main__":
-    # print(calculate_classification_percentages_facticity_output([('Klimawandel verursacht durch menschliche Aktivitäten', True), ('Situation in Deutschland', False)]))
     pass

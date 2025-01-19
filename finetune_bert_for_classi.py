@@ -165,43 +165,6 @@ def extract_claims_using_finetuned_bert(data_to_predict_on, batch_size = 5):
 
 
 if __name__ == "__main__":
-    import pandas as pd
-    # # Load the dataset
-    # first_test_df = pd.read_csv("labeled_sentences_first_621.csv")
-    # first_test_df_subset = first_test_df[['sentence', 'label_numeric']]
-    # first_test_df_subset_renamed = first_test_df_subset.rename(columns={'sentence': 'text', 'label_numeric': 'label'})
-    # first_test_df_subset_as_dict = first_test_df_subset_renamed.to_dict(orient="list")
-
-    # # Initialize the trainer
-    # trainer = ClaimClassifierTrainer()
-
-    # # Prepare the dataset
-    # trainer.prepare_dataset(first_test_df_subset_as_dict)
-
-    # # Set up model and trainer
-    # trainer.set_up_model_and_trainer()
-
-    # # Train the model
-    # trainer.train()
-
-    # # Evaluate the model
-    # metrics = trainer.evaluate()
-    # print("Evaluation metrics:", metrics)
-
-    # # Predict on the test set
-    # predictions = trainer.predict()
-    # print("Predictions:", predictions)
-
-
-    # # Save the model
-    # trainer.save_model()
-    # exit()
-
-    # # Inference using the pipeline
-    # text_pipeline = ClaimClassifierTrainer.pipeline_inference(model_dir="./claim_classifier")
-    # result = text_pipeline("Das ist eine Behauptung.")
-    # print("Pipeline prediction:", result)
-
     # Initialize the trainer
     trainer = ClaimClassifierTrainer()
     trainer.load_for_inference()
