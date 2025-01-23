@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 from zyla_api import zyla_check_fact_api, dummy_zyla_check_fact_api
 
-def extract_claims(list_of_sentences, batch_size=20):
+def extract_claims(list_of_sentences, batch_size=15):
     """
     Extract claims from text using Facticity API and save them to a JSON file.
 
@@ -26,7 +26,7 @@ def extract_claims(list_of_sentences, batch_size=20):
 
     extracted_claims = []
 
-    # Process sentences in batches of 20
+    # Process sentences in batches of 15
     for i in range(0, len(list_of_sentences), batch_size):
         print(f"Processing sentences {i} to {i+batch_size}...")
         input_text = " ".join(list_of_sentences[i:i+batch_size])
@@ -74,6 +74,42 @@ def fact_checking_facticity(claims_list):
             print(result)
             # In case of an error, mark the claim with "Error" in the list
             claim_classification_list.append((claim, "Error"))
+
+    return claim_classification_list
+
+
+def fact_checking_facticity_RAW(claims_list):
+    """
+    Performs fact-checking on a list of claims using the Facticity API.
+
+    Args:
+    claims_list (list): A list of claims to be fact-checked.
+
+    Returns:
+    list: A list of tuples, where each tuple contains (claim, classification).
+            Classification will be the API result or "Error" if processing failed.
+    """
+    load_dotenv()
+    api_key = os.getenv("FACT_API_KEY")
+
+    facticity = FacticityAPI(api_key)
+
+    # Initialize the list to store claim-classification pairs
+    claim_classification_list = []
+
+    for idx, claim in enumerate(claims_list):
+        try:
+            # Fact-check the claim using the API
+            result = facticity.fact_check(query=claim)
+
+            # Append the claim and its classification as a tuple to the list
+            claim_classification_list.append(result)
+            print(idx, "Successfully fact-checked claim:", result)
+        except Exception as e:
+            print(f"Error processing claim: {e}")
+            print(result)
+            # In case of an error, mark the claim with "Error" in the list
+            claim_classification_list.append("Error")
 
     return claim_classification_list
 
@@ -178,16 +214,4 @@ def fact_checking_zyla_RAW(claims_list):
     return claim_classification_list
 
 if __name__ == "__main__":
-    from decision_helper_lib import read_from_json#, translate_sentences
-    # TESTING
-
-    JSON_BASE_PATH = "saved_on_harddrive"
-    json_path_full_results_dict = os.path.join(JSON_BASE_PATH, "full_results_dict.json")
-
-    full_results_dict = read_from_json(json_path_full_results_dict)
-
-    for key, value in full_results_dict.items():
-        claims_list = value.get("extracted_claims", [])
-        claim_classification_list = fact_checking_zyla(claims_list)
-        break
-    print(claim_classification_list)
+    pass

@@ -6,6 +6,48 @@ import re
 import PyPDF2
 from collections import defaultdict, Counter
 
+def generate_test_pdf():
+    import os
+    from reportlab.lib.pagesizes import A4
+    from reportlab.pdfgen import canvas
+    from lorem_text import lorem
+
+    # Generate random German text with sentences ending in dots
+    sentence_count = 15  # Determines how many sentences are generated
+    german_text = " Die Sonne ist genau 15 Millionen Kilometer von der Erde entfernt.".join([lorem.sentence() for i in range(sentence_count)])
+
+    # Create a PDF
+    pdf_filename = os.path.join("data_test", "random_german_text.pdf")
+    c = canvas.Canvas(pdf_filename, pagesize=A4)
+
+    # Configure font and text
+    c.setFont("Helvetica", 12)
+    text_object = c.beginText(40, 750)  # Position (x, y) in points
+
+    # Split text into lines to fit the page
+    lines = []
+    words = german_text.split()
+    current_line = []
+    max_width = 500  # Adjust based on page width
+
+    for word in words:
+        current_line.append(word)
+        line_width = c.stringWidth(" ".join(current_line), "Helvetica", 12)
+        if line_width > max_width:
+            lines.append(" ".join(current_line[:-1]))
+            current_line = [word]
+    lines.append(" ".join(current_line))
+
+    # Add lines to the PDF
+    for line in lines:
+        text_object.textLine(line)
+
+    c.drawText(text_object)
+    c.save()
+
+    print(f"PDF created: {pdf_filename}")
+
+
 def get_all_filenames_from_a_given_path(path):
     # get all filenames from a given path
     import os
@@ -73,6 +115,7 @@ def preprocess_text(text: str, nlp) -> dict:
         and token.text != "--"
         and token.text != "\uf0b7"
         and token.text != "|"
+        and token.text != "eichhorster"
     ]
 
     # Lemmas lowercased
@@ -163,9 +206,13 @@ def analyze_german_sentiments(sentences_list):
     """
     from transformers import pipeline
     # Initialize the sentiment analysis pipeline for German text
+    # classifier = pipeline('sentiment-analysis',
+    #                     model='oliverguhr/german-sentiment-bert',
+    #                     tokenizer='oliverguhr/german-sentiment-bert')
+
     classifier = pipeline('sentiment-analysis',
-                        model='oliverguhr/german-sentiment-bert',
-                        tokenizer='oliverguhr/german-sentiment-bert')
+                        model='Commandante/german-party-sentiment-bert',
+                        tokenizer='Commandante/german-party-sentiment-bert')
 
     # Store results
     results = []
@@ -454,7 +501,11 @@ def calculate_classification_percentages_facticity_output(data):
     from collections import Counter
 
     # Extract the classifications from the data
-    classifications = [entry[1] for entry in data]
+    # classifications = [entry[1] for entry in data]
+    classifications = []
+
+    for dict_ in data:
+        classifications.append(dict_["Classification"])
 
     # Count the occurrences of each classification
     classification_counts = Counter(classifications)
@@ -503,4 +554,4 @@ def calculate_classification_percentages_zyla_output(fact_checks_data):
     return percentages_dict
 
 if __name__ == "__main__":
-    pass
+    generate_test_pdf()

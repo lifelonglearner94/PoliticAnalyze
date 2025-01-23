@@ -1,3 +1,6 @@
+//https://claude.site/artifacts/5fe077cf-114f-495d-bc72-228386daab7c
+
+
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
@@ -6,77 +9,79 @@ const PoliticalPartyComparison = () => {
   // Data transformation for fact checks (ordered by False percentage)
   const factCheckData = [
     {
-      party: 'AFD',
-      'True': 32.89,
-      'Partially true': 3.29,
-      'False': 63.82
+      party: 'AfD',
+      'Wahr': 32.89,
+      'Teilweise wahr': 3.29,
+      'Falsch': 63.82
     },
     {
       party: 'CDU',
-      'True': 48.28,
-      'Partially true': 7.76,
-      'False': 43.97
+      'Wahr': 48.28,
+      'Teilweise wahr': 7.76,
+      'Falsch': 43.97
     },
     {
       party: 'SPD',
-      'True': 65.57,
-      'Partially true': 9.02,
-      'False': 25.41
+      'Wahr': 65.57,
+      'Teilweise wahr': 9.02,
+      'Falsch': 25.41
     },
     {
-      party: 'GRUENE',
-      'True': 72.34,
-      'Partially true': 7.80,
-      'False': 19.86
+      party: 'GRÜNE',
+      'Wahr': 72.34,
+      'Teilweise wahr': 7.80,
+      'Falsch': 19.86
     }
-  ].sort((a, b) => b.False - a.False);
+  ].sort((a, b) => b.Falsch - a.Falsch);
 
   // Data transformation for sentiment analysis
   const sentimentData = [
     {
-      party: 'AFD',
-      negative: 6.63,
+      party: 'AfD',
+      negativ: 6.63,
       neutral: 88.79,
-      positive: 4.57
+      positiv: 4.57
     },
     {
       party: 'CDU',
-      negative: 4.70,
+      negativ: 4.70,
       neutral: 92.60,
-      positive: 2.70
+      positiv: 2.70
     },
     {
-      party: 'GRUENE',
-      negative: 2.87,
+      party: 'GRÜNE',
+      negativ: 2.87,
       neutral: 93.56,
-      positive: 3.56
+      positiv: 3.56
     },
     {
       party: 'SPD',
-      negative: 1.49,
+      negativ: 1.49,
       neutral: 96.97,
-      positive: 1.54
+      positiv: 1.54
     }
   ];
 
-  // Word categories data
+  const wordCategories = ['Adjektive', 'Substantive', 'Verben'];
+  const parties = ['AfD', 'CDU', 'GRÜNE', 'SPD'];
+
   const wordCategoriesData = {
-    'AFD': {
-      ADJ: [
+    'AfD': {
+      'Adjektive': [
         { word: 'deutsch', count: 107 },
-        { word: 'eichhorster', count: 85 },
         { word: 'europäisch', count: 45 },
         { word: 'hoch', count: 37 },
-        { word: 'staatlich', count: 34 }
+        { word: 'staatlich', count: 34 },
+        { word: 'politisch', count: 25 }
       ],
-      NOUN: [
+      'Substantive': [
         { word: 'partei', count: 100 },
         { word: 'alternative', count: 87 },
         { word: 'bundesgeschäftsstelle', count: 83 },
         { word: 'afd', count: 66 },
         { word: 'kind', count: 58 }
       ],
-      VERB: [
+      'Verben': [
         { word: 'fordern', count: 61 },
         { word: 'lehnen', count: 45 },
         { word: 'setzen', count: 38 },
@@ -85,21 +90,21 @@ const PoliticalPartyComparison = () => {
       ]
     },
     'CDU': {
-      ADJ: [
+      'Adjektive': [
         { word: 'europäisch', count: 62 },
         { word: 'stark', count: 39 },
         { word: 'deutsch', count: 38 },
         { word: 'digital', count: 35 },
         { word: 'hoch', count: 27 }
       ],
-      NOUN: [
+      'Substantive': [
         { word: 'land', count: 123 },
         { word: 'mensch', count: 63 },
         { word: 'kind', count: 44 },
         { word: 'sicherheit', count: 44 },
         { word: 'staat', count: 44 }
       ],
-      VERB: [
+      'Verben': [
         { word: 'stärken', count: 112 },
         { word: 'setzen', count: 110 },
         { word: 'schaffen', count: 68 },
@@ -107,22 +112,22 @@ const PoliticalPartyComparison = () => {
         { word: 'unterstützen', count: 63 }
       ]
     },
-    'GRUENE': {
-      ADJ: [
+    'GRÜNE': {
+      'Adjektive': [
         { word: 'europäisch', count: 96 },
         { word: 'stark', count: 68 },
         { word: 'gemeinsam', count: 43 },
         { word: 'international', count: 42 },
         { word: 'sozial', count: 36 }
       ],
-      NOUN: [
+      'Substantive': [
         { word: 'mensch', count: 187 },
         { word: 'land', count: 126 },
         { word: 'sicherheit', count: 55 },
         { word: 'gesellschaft', count: 53 },
         { word: 'demokratie', count: 47 }
       ],
-      VERB: [
+      'Verben': [
         { word: 'stärken', count: 106 },
         { word: 'brauchen', count: 79 },
         { word: 'setzen', count: 75 },
@@ -131,21 +136,21 @@ const PoliticalPartyComparison = () => {
       ]
     },
     'SPD': {
-      ADJ: [
+      'Adjektive': [
         { word: 'europäisch', count: 80 },
         { word: 'sozial', count: 46 },
         { word: 'wichtig', count: 40 },
         { word: 'öffentlich', count: 38 },
         { word: 'stark', count: 33 }
       ],
-      NOUN: [
+      'Substantive': [
         { word: 'land', count: 85 },
         { word: 'mensch', count: 83 },
         { word: 'arbeit', count: 46 },
         { word: 'familie', count: 42 },
         { word: 'sicherheit', count: 41 }
       ],
-      VERB: [
+      'Verben': [
         { word: 'stärken', count: 98 },
         { word: 'setzen', count: 93 },
         { word: 'schaffen', count: 68 },
@@ -156,90 +161,109 @@ const PoliticalPartyComparison = () => {
   };
 
   const colors = {
-    True: '#4CAF50',
-    'Partially true': '#FFC107',
-    False: '#F44336',
-    negative: '#FF9999',
+    Wahr: '#4CAF50',
+    'Teilweise wahr': '#FFC107',
+    Falsch: '#F44336',
+    negativ: '#FF9999',
     neutral: '#AAAAAA',
-    positive: '#99FF99'
+    positiv: '#99FF99'
   };
 
   return (
-    <div className="w-full space-y-6">
-      <Card>
-        <CardHeader>
-          <CardTitle>Fact Check Analysis by Party (Ordered by False Statements)</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={factCheckData}>
-                <XAxis dataKey="party" />
-                <YAxis
-                  domain={[0, 100]}
-                  ticks={[0, 20, 40, 60, 80, 100]}
-                  tickFormatter={(value) => `${value}%`}
-                />
-                <Tooltip formatter={(value) => [`${value}%`]} />
-                <Legend />
-                <Bar dataKey="True" stackId="a" fill={colors.True} />
-                <Bar dataKey="Partially true" stackId="a" fill={colors['Partially true']} />
-                <Bar dataKey="False" stackId="a" fill={colors.False} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </CardContent>
-      </Card>
+    <div className="w-full space-y-6 p-4 bg-gray-50">
+      <h1 className="text-2xl font-bold text-center mb-8">Analyse der Parteiprogramme</h1>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Sentiment Analysis by Party</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={sentimentData}>
-                <XAxis dataKey="party" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="positive" stackId="a" fill={colors.positive} />
-                <Bar dataKey="neutral" stackId="a" fill={colors.neutral} />
-                <Bar dataKey="negative" stackId="a" fill={colors.negative} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </CardContent>
-      </Card>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Fact Check Analysis */}
+        <Card className="lg:col-span-2">
+          <CardHeader>
+            <CardTitle>KI-Faktenüberprüfung aller Behauptungen in den Wahlprogrammen</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={factCheckData}>
+                  <XAxis dataKey="party" />
+                  <YAxis
+                    domain={[0, 100]}
+                    ticks={[0, 20, 40, 60, 80, 100]}
+                    tickFormatter={(value) => `${value}%`}
+                  />
+                  <Tooltip formatter={(value) => [`${value}%`]} />
+                  <Legend />
+                  <Bar dataKey="Wahr" stackId="a" fill={colors.Wahr} />
+                  <Bar dataKey="Teilweise wahr" stackId="a" fill={colors['Teilweise wahr']} />
+                  <Bar dataKey="Falsch" stackId="a" fill={colors.Falsch} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </CardContent>
+        </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Most Frequently Used Words by Category and Party</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {Object.entries(wordCategoriesData).map(([party, categories]) => (
-              <div key={party} className="border rounded-lg p-4">
-                <h3 className="font-bold mb-4 text-lg">{party}</h3>
-                <div className="space-y-4">
-                  {Object.entries(categories).map(([category, words]) => (
-                    <div key={category} className="space-y-2">
-                      <h4 className="font-semibold">{category}</h4>
-                      <ul className="list-disc list-inside">
-                        {words.map((item, index) => (
-                          <li key={index} className="text-sm">
-                            {item.word} ({item.count})
-                          </li>
+        {/* Sentiment Analysis */}
+        <Card className="lg:col-span-2">
+          <CardHeader>
+            <CardTitle>Stimmungsanalyse nach Partei</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={sentimentData}>
+                  <XAxis dataKey="party" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Bar dataKey="positiv" stackId="a" fill={colors.positiv} />
+                  <Bar dataKey="neutral" stackId="a" fill={colors.neutral} />
+                  <Bar dataKey="negativ" stackId="a" fill={colors.negativ} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Word Analysis Tables */}
+        <Card className="lg:col-span-2">
+          <CardHeader>
+            <CardTitle>Vergleich der häufigsten Wörter nach Kategorie</CardTitle>
+          </CardHeader>
+          <CardContent className="overflow-x-auto">
+            {wordCategories.map((category) => (
+              <div key={category} className="mb-8">
+                <h3 className="font-bold mb-4 text-lg">{category}</h3>
+                <table className="w-full border-collapse bg-white">
+                  <thead>
+                    <tr className="bg-gray-100">
+                      <th className="border p-2 text-left w-1/4">AfD</th>
+                      <th className="border p-2 text-left w-1/4">CDU</th>
+                      <th className="border p-2 text-left w-1/4">GRÜNE</th>
+                      <th className="border p-2 text-left w-1/4">SPD</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[0, 1, 2, 3, 4].map((index) => (
+                      <tr key={index} className="hover:bg-gray-50">
+                        {parties.map((party) => (
+                          <td key={party} className="border p-2 text-sm">
+                            {wordCategoriesData[party][category][index] ? (
+                              <span>
+                                {wordCategoriesData[party][category][index].word}
+                                <span className="text-gray-500 ml-1">
+                                  ({wordCategoriesData[party][category][index].count})
+                                </span>
+                              </span>
+                            ) : '-'}
+                          </td>
                         ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             ))}
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 };

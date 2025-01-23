@@ -94,6 +94,6 @@ if __name__ == "__main__":
 
     load_dotenv()
 
-    zyla_api_key = os.getenv("ZYLA_API_KEY")
+    claim_buster_api_key = os.getenv("CLAIM_BUSTER_API_KEY")
 
-    print(zyla_check_fact_api("Der Klimawandel wird durch menschliche Aktivitäten verursacht. Deutschland geht den Bach herunter.", zyla_api_key))
+    print(claim_buster_check_fact("Elderly people often require treatments and care.", claim_buster_api_key))
